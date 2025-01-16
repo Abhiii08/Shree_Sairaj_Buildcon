@@ -82,6 +82,7 @@ hr{
 .info .more-info{
     display: inline;
 }
+
 .toggle-btn{
     display: none;
 }
@@ -159,7 +160,7 @@ hr{
 }
 
 .more-info{
-    display: none;
+    display: inline;
 }
 
 .more-info--show{
