@@ -1,0 +1,36 @@
+.footer{
+    width: 100%;
+    padding: 30px;
+    background: rgb(0, 0, 0);
+    margin-top: 2%;
+    padding-bottom: 60px;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    padding: 30px;
+    gap:40px;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.footer-card{
+    color: white;
+    text-align: left;
+    text-shadow: 1px 1px 2px black;
+}
+
+.footer-card h5{
+    position: relative;
+}
+
+.footer-card img{   
+    width: 20px;
+    height: 20px;
+    margin:5px
+}
+
+.footer hr{
+    animation: none;
+}

@@ -1,0 +1,36 @@
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: 0.3s ease;
+    scale: 1;
+}
+
+.slider-button.left {
+    left: 40px;
+}
+
+.slider-button.right {
+    right: 40px;
+}
+
+.slider-button:hover {
+    scale: 1.1;
+}
+
+@media(max-width:700px){
+    .slider-button{
+        display: none;
+    }
+}

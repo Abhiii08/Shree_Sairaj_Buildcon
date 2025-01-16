@@ -1,0 +1,719 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito Sans", serif;
+    box-sizing: border-box;
+}
+
+
+@media(max-width:700px){
+    h2{
+        font-size: 23px;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0.5;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+hr{
+    animation: appear 2.5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
+}
+
+
+/*--- header ---*/
+.header{
+    background: linear-gradient(rgba(0, 0, 0, 0.282),rgba(0, 0, 0, 0.71));
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    position:relative;
+    overflow: hidden;
+}
+
+/*--- Video ---*/
+.bg-video{
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    
+}
+
+@media(min-aspect-ratio:16/9){
+    .bg-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio:16/9){
+    .bg-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 50px;
+    text-shadow: 1px 1px 5px rgb(255, 0, 0);
+    padding-bottom: 10px;
+}
+
+.text-box h5{
+    font-size: 20px;
+    margin: 10px 0 40px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 28px;
+    }
+    .text-box h5{
+        font-size: 15px;
+    }
+}
+
+/*--- Vision ---*/
+.vision{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    margin: auto;
+    text-align: center;
+    margin-top: 2%
+}
+
+.vision h3{
+    font-size: 27px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.784);
+    font-weight: 600;
+}
+
+.vision-box{
+    padding: 2em;
+    background: linear-gradient( rgb(255, 0, 0, 60%),rgb(255, 255, 255));
+    text-align: center;
+    transition: 0.3s;
+    scale: 1;
+    animation: appear 2.5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
+} 
+
+.vision-box:hover{
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.499); 
+    letter-spacing: 2.5px;
+    scale: 1.05;
+}
+
+.vision-box p{
+    letter-spacing: 0;
+}
+
+.grid-container{
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    gap:40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+}
+
+.vision-textbox{
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.vision-textbox span{
+    font-style: italic;
+    font-size:18px
+}
+
+.vision-box span{
+    color:rgb(253, 40, 40)
+}
+
+@media(max-width:700px){
+    .grid-container{
+        display: grid; /* Keep the grid layout */
+        grid-auto-flow: column; /* Make grid items flow horizontally */
+        grid-auto-columns: 325px; /* Set column size */
+        grid-template-columns: 325px;
+        gap: 20px; /* Spacing between grid items */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        padding: 60px 40px 30px 40px;
+        scroll-behavior: smooth;
+        -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+        scrollbar-width: none;
+        animation: appear 2.5s ease-in-out;
+        animation-timeline: view();
+        animation-range: entry 0% cover 45%;
+    }
+    .vision-box:hover{
+        box-shadow: none;
+        letter-spacing: 0;
+        scale: 1;
+    }
+    .vision-textbox{
+        font-size: 15px;
+    }
+    .vision-textbox span{
+        font-size: 16px;
+    }
+}
+
+
+/*--- team ---*/
+.team{
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: rgb(255, 255, 255);
+    color: white;
+    
+}
+
+.team h2{
+    color: black;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 27px;
+    letter-spacing: 1px;
+    animation: appear 2.5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
+    font-weight: 400;
+}
+
+.box-area{
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-gap: 120px;
+    justify-content: center;
+}
+
+#team-box{
+    display: grid; /* Keep the grid layout */
+    grid-auto-flow: column; /* Make grid items flow horizontally */
+    grid-auto-columns: 175px; /* Set column size */
+    grid-template-columns: 175px;
+    gap: 70px; /* Spacing between grid items */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-behavior: smooth;
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none;
+    animation: appear 2.5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
+    justify-content: center;
+}
+
+.box{
+    position: relative;
+    overflow: hidden;
+    animation: appear 2.5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
+}
+
+#team-box img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.box img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+}
+
+#name{
+    font-size: 20px;
+}
+
+#team-box h3{
+    font-size: 18px;
+}
+
+.team-text{
+    color: black; 
+    text-align: center; 
+    font-style: italic; 
+    font-size: 14px;
+}
+
+@media(max-width:700px){
+    .team h2{
+        font-size: 27px;
+    }
+    .box-area{
+        grid-template-columns: 250px;
+        gap: 0px;
+    }
+    .box img{
+        height: 275px;
+    }
+    #name{
+        font-size: 20px;
+        letter-spacing: 0.5px;
+    }
+    #team-box{
+        display: grid; /* Keep the grid layout */
+        grid-auto-flow: column; /* Make grid items flow horizontally */
+        grid-auto-columns: 150px; /* Set column size */
+        grid-template-columns: 150px;
+        gap: 20px; /* Spacing between grid items */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        padding-left: 30px;
+        padding-right: 10px;
+        scroll-behavior: smooth;
+        -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+        scrollbar-width: none;
+        animation: appear 2.5s ease-in-out;
+        animation-timeline: view();
+        animation-range: entry 0% cover 45%;
+        justify-content: flex-start;
+    }
+    #team-box h3{
+        font-size: 18px;
+    }
+}
+
+/* Value */
+.value{
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    margin: auto;
+    padding-bottom: 30px;
+    background: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.col p, .col span{
+    display: inline;
+    font-size: 25px;
+}
+
+.col p{
+    color: red;
+}
+
+.col span{
+    font-weight: bold;
+}
+
+.value-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    padding-left: 30px;
+    padding-right: 30px;
+    grid-gap: 20px;
+    padding-bottom: 10px;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+.value img{
+    width: 35px;
+    height: 35px;
+}
+
+/* Ongoing Projects */
+.ongoing-projects{
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    margin: auto;
+    padding-bottom: 30px;
+    background: rgb(255, 255, 255);
+    
+}
+
+.project-grid h3{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.project-grid a{
+    text-decoration: none;
+    color: white;
+}
+
+.project-grid p{
+    font-size: 14px;
+}
+
+.ongoing-projects h2{
+    text-align: center;
+    margin-top: 1.5%;
+    padding-bottom: 10px;
+    font-size: 27px;
+    animation: appear 2.5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.project-grid {
+    display: grid; /* Keep the grid layout */
+    grid-auto-flow: column; /* Make grid items flow horizontally */
+    grid-auto-columns: 300px; /* Set column size */
+    grid-template-columns: 300px;
+    gap: 20px; /* Spacing between grid items */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 30px;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    animation: appear 2.5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
+}
+
+.project-grid::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+.project-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.project-col{
+    transition: 0.3s;
+    position: relative;
+    animation: appear 2.5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.project-col p{
+    letter-spacing: 0;
+}
+
+.project-col:hover{
+    letter-spacing: 2px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.558);
+    scale: 1.05
+}
+
+#windsor{
+    height: 230px;
+    background-image: url(/Images/windsor.jpg);
+    background-size: cover;
+    border-radius: 0px;
+    padding-top: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+#prath{
+    height: 230px;
+    background-image: url(/Images/prath.jpg);
+    background-size: cover;
+    border-radius: 0px;
+    padding-top: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+#ace{
+    height: 230px;
+    background-image: url(/Images/ace.jpg);
+    background-size: cover;
+    border-radius: 0px;
+    padding-top: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+#bella{
+    height: 230px;
+    background-image: url(/Images/bella.jpg);
+    background-size: cover;
+    border-radius: 0px;
+    padding-top: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+#levi{
+    height: 230px;
+    background-image: url(/Images/leviance.jpg);
+    background-size: cover;
+    border-radius: 0px;
+    padding-top: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+#tirth{
+    height: 230px;
+    background-image: url(/Images/avon.jpg);
+    background-size: cover;
+    border-radius: 0px;
+    padding-top: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.project-col{
+    text-align: center;
+}
+
+@media(max-width:700px){
+    .ongoing-projects h2{
+        font-size: 27px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+    .slider-button{
+        display: none;
+    }
+    .project-grid{
+        grid-template-columns: 250px;
+        grid-auto-columns: 250px;
+    }
+    #windsor, #ace, #bella, #levi, #tirth, #prath{
+        height: 200px;
+    }
+    .project-col:hover{
+        letter-spacing: 0;
+        box-shadow: none;
+        scale: 0
+    }
+}
+
+/* Completed projects */
+.completed-projects{
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    margin: auto;
+    padding-bottom: 30px;
+    background: rgb(255, 255, 255);
+    
+}
+
+.completed-projects h2{
+    text-align: center;
+    margin-top: 1.5%;
+    padding-bottom: 10px;
+    font-size: 27px;
+    animation: appear 2.5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+#avon{
+    height: 230px;
+    background-image: url(/Images/avon.jpg);
+    background-size: cover;
+    border-radius: 0px;
+    padding-top: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+#k11{
+    height: 230px;
+    background-image: url(/Images/k11.jpg);
+    background-size: cover;
+    border-radius: 0px;
+    padding-top: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+#baner{
+    height: 230px;
+    background-image: url(/Images/baner.jpg);
+    background-size: cover;
+    border-radius: 0px;
+    padding-top: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+#kohinoor{
+    height: 230px;
+    background-image: url(/Images/kohinoor.jpg);
+    background-size: cover;
+    border-radius: 0px;
+    padding-top: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+@media(max-width:700px) {
+    .completed-projects h2{
+        font-size: 27px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+    .slider-button{
+        display: none;
+    }
+    #avon, #k11, #baner, #kohinoor{
+        height: 200px
+    }
+}
+
+/* Tabs island */
+.tabs{
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    margin: auto;
+    padding-bottom: 30px;
+    background: rgb(255, 255, 255);
+}
+
+
+#tab-textbox{
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 17px
+}
+
+@media(max-width:700px){
+}
+
+/* Routes */
+.route{
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    margin: auto;
+    padding-bottom: 30px;
+    background: rgb(255, 255, 255);
+}
+
+.tabs-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 40px;
+    gap: 40px;
+    animation: appear 2.5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
+}
+
+.tab-card{
+    width: 100%;
+    height: 300px;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(rgba(255, 0, 0, 70%),white);
+    padding: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.595);
+    position: relative;
+    transition: 0.5s;
+    cursor: pointer;
+    animation: appear 2.5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
+}
+
+.tab-card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.tab-card:hover{
+    color: rgb(0, 0, 0);
+    background: red;
+}
+
+.tab-card button{
+    position: absolute;
+    top: 80%;
+    padding: 7px 15px;
+    font-size: 15px;
+    transition: 0.3s;
+    border: 0;
+    text-decoration: none;
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.521);
+}
+
+.tab-text{
+    position: absolute;
+    top:65%;
+    background: rgb(255, 0, 0);
+    padding: 5px;
+    padding-bottom: 0;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.521);
+}
+
+.route .tab-text{
+    background: none;
+    padding: none;
+    top: 25px;
+    box-shadow: none;
+    color: white;
+}
+
+.route .tab-card button{
+    top:70%
+}
+
+.tab-text h3{
+    font-size: 18px;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+.route .tab-text h3{
+    font-size: 25px;
+}
+
+.tab-card button:hover{
+    background: black;
+    color: rgb(255, 255, 255);
+    box-shadow: none
+}

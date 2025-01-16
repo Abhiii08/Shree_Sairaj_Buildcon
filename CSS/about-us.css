@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito Sans", serif;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0.5;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+hr{
+    animation: appear 2.5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
+}
+
+
+/* Header */
+.header{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    padding-bottom: 30px;
+    background-image: linear-gradient(transparent,rgba(0, 0, 0, 0.681)), url(/Images/Header.jpg);
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+.header-box{
+    width: 90%;
+    position: absolute;
+    top:72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header-box h1{
+    font-size: 3.5vw;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.775);
+    letter-spacing: 1.5px;
+    color: white;
+    font-weight: 600;
+    position: relative;
+}
+
+@media(max-width:700px){
+    .header-box h1{
+        font-size: 35px;
+    }
+}
+
+/* Description */
+.description{
+    width: 100%;
+    padding: 50px;
+    padding-bottom: 20px;
+    position: relative;
+    animation: appear 2.5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
+}
+
+.description h4{
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.description p{
+    text-align: center;
+    padding: 10px;
+}
+
+.info .more-info{
+    display: inline;
+}
+.toggle-btn{
+    display: none;
+}
+.title{
+    color:red;
+}
+.description h4{
+    font-size: 24px;
+}
+
+@media(max-width:700px){
+    .description p{
+        text-align: center;
+        left: 20px;
+        right: 20px;
+    }
+    .info .more-info{
+        display: none;
+    }
+    .info .more-info--show{
+        display: inline;
+    }
+    .toggle-btn{
+        display: block;
+        text-align: center;
+    }
+}
+
+/* Partners */
+.partners{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    position: relative;
+    animation: appear 2.5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
+}
+
+.heading-h2{
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.container{
+    padding: 10px;
+}
+
+.cards{
+    display: flex;
+    padding: 10px;
+    margin-bottom: 2%;
+    animation: appear 2.5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
+}
+
+.cards img{
+    width: 225px;
+    height: 250px;
+    align-items: left;
+    padding: 10px;
+    object-fit: cover;
+}
+
+.info h5{
+    font-style: italic;
+}
+
+.cards .info{
+    padding: 20px;
+}
+
+.more-info{
+    display: none;
+}
+
+.more-info--show{
+    display: inline;
+}
+
+.toggle-btn{
+    color: red;
+    cursor: pointer;
+}
+
+@media(max-width:700px){
+    .cards{
+        flex-direction: column;
+    }
+}
+
+/* Team */
+.team{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    position: relative;
+    animation: appear 2.5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
+}
+
+
