@@ -114,7 +114,7 @@ hr{
 
 .vision-box{
     padding: 2em;
-    background: linear-gradient( rgb(255, 0, 0, 60%),rgb(255, 255, 255));
+    background: linear-gradient( rgba(144, 144, 144, 0.6),rgb(255, 255, 255));
     text-align: center;
     transition: 0.3s;
     scale: 1;
@@ -456,7 +456,7 @@ hr{
 
 #ace{
     height: 230px;
-    background-image: url(/Images/ace.jpg);
+    background-image: url(/Images/Sites/ace.jpg);
     background-size: cover;
     border-radius: 0px;
     padding-top: 20px;
@@ -466,7 +466,7 @@ hr{
 
 #bella{
     height: 230px;
-    background-image: url(/Images/bella.jpg);
+    background-image: url(/Images/Sites/bella.jpg);
     background-size: cover;
     border-radius: 0px;
     padding-top: 20px;
@@ -474,7 +474,7 @@ hr{
     text-shadow: 1px 1px 2px black;
 }
 
-#levi{
+#livi{
     height: 230px;
     background-image: url(/Images/leviance.jpg);
     background-size: cover;
@@ -484,7 +484,7 @@ hr{
     text-shadow: 1px 1px 2px black;
 }
 
-#tirth{
+#teerth{
     height: 230px;
     background-image: url(/Images/avon.jpg);
     background-size: cover;
@@ -511,7 +511,7 @@ hr{
         grid-template-columns: 250px;
         grid-auto-columns: 250px;
     }
-    #windsor, #ace, #bella, #levi, #tirth, #prath{
+    #windsor, #ace, #bella, #livi, #teerth, #prath{
         height: 200px;
     }
     .project-col:hover{
@@ -546,7 +546,7 @@ hr{
 
 #avon{
     height: 230px;
-    background-image: url(/Images/avon.jpg);
+    background-image: url(/Images/Sites/avon.jpg);
     background-size: cover;
     border-radius: 0px;
     padding-top: 20px;
@@ -556,7 +556,7 @@ hr{
 
 #k11{
     height: 230px;
-    background-image: url(/Images/k11.jpg);
+    background-image: url(/Images/Sites/k11.jpg);
     background-size: cover;
     border-radius: 0px;
     padding-top: 20px;
@@ -564,7 +564,7 @@ hr{
     text-shadow: 1px 1px 2px black;
 }
 
-#baner{
+#equilife{
     height: 230px;
     background-image: url(/Images/baner.jpg);
     background-size: cover;
@@ -574,15 +574,6 @@ hr{
     text-shadow: 1px 1px 2px black;
 }
 
-#kohinoor{
-    height: 230px;
-    background-image: url(/Images/kohinoor.jpg);
-    background-size: cover;
-    border-radius: 0px;
-    padding-top: 20px;
-    color: white;
-    text-shadow: 1px 1px 2px black;
-}
 
 @media(max-width:700px) {
     .completed-projects h2{
@@ -593,7 +584,7 @@ hr{
     .slider-button{
         display: none;
     }
-    #avon, #k11, #baner, #kohinoor{
+    #avon, #k11, #windsor, #equilife{
         height: 200px
     }
 }
