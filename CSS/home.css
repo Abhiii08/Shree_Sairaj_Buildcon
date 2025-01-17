@@ -79,6 +79,7 @@ hr{
     font-size: 50px;
     text-shadow: 1px 1px 5px rgb(255, 0, 0);
     padding-bottom: 10px;
+    letter-spacing: 1px;
 }
 
 .text-box h5{
