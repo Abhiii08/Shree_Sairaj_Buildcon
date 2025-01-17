@@ -9,27 +9,24 @@
     <!-- Icon links --> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chevron_right" />
     <!-- CSS files links -->  
     <link rel="stylesheet" href="/CSS/contact.css">
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-        var navlinks = document.getElementById("navlinks");
-
-        function showmenu() {
-            navlinks.style.right = "0";
-        }
-
-        function hidemenu() {
-            navlinks.style.right = "-200px";
-        }
-        document.querySelector(".fa-bars").onclick = showmenu;
-        document.querySelector(".fa-times").onclick = hidemenu;
-        });
-    </script>
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/nav.css">
+    <!--Font links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ledger&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="navbar">
+    <!--Script link-->
+    <script src="/JS/home.js"></script>
+    <script src="/JS/rd-mr.js"></script>
+    <script src="/JS/slider.js"></script>
+
+    <section class="header">
         <nav class="fixed-top">
             <a href="#"><h3>SAI<span>RAJ</span></h3></a>
             <div class="nav-links" id="navlinks">
@@ -39,11 +36,18 @@
                     <li><a href="#">PROJECTS</a></li>
                     <li><a href="#">RESOURCES</a></li>
                     <li><a href="#">EVENTS</a></li>
-                    <li><a href="\contact.html">CONTACT US</a></li>
-                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="about-us.html">ABOUT US</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showmenu()"></i>
         </nav>
+        <div class="header-box">
+            <h1>CONTACT US</h1>
+        </div>
+    </section>
+    <section class="location">
+        <hr style="color: black; width: 80%; position: absolute; left:10%;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224.7659967424197!2d73.79648189758258!3d18.508179992217944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfb34eee7e2f%3A0x40afcfe5881a36ac!2sMcDonald&#39;s!5e1!3m2!1sen!2sin!4v1737097911928!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 </body>

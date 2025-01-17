@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito Sans", serif;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0.5;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Header */
+.header{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    padding-bottom: 30px;
+    background-image: linear-gradient(transparent,rgba(0, 0, 0, 0.681)), url(/Images/Header.jpg);
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+.header-box{
+    width: 90%;
+    position: absolute;
+    top:80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header-box h1{
+    font-size: 3vw;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.775);
+    letter-spacing: 1.5px;
+    color: white;
+    font-weight: 600;
+    position: relative;
+}
+
+/* Location */
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.location iframe{
+    width: 100%;
+    padding-top: 50px;
+    height: 400px;
+
+}
