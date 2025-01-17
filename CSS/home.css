@@ -300,7 +300,7 @@ hr{
         gap: 20px; /* Spacing between grid items */
         overflow-x: auto; /* Enable horizontal scrolling */
         padding-left: 30px;
-        padding-right: 10px;
+        padding-right: 30px;
         scroll-behavior: smooth;
         -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
         scrollbar-width: none;
