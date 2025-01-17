@@ -374,7 +374,7 @@ hr{
     color: white;
 }
 
-.project-grid p{
+.project-text p{
     font-size: 14px;
 }
 
@@ -424,6 +424,7 @@ hr{
     animation-range: entry 0% cover 30%;
 }
 
+
 .project-col p{
     letter-spacing: 0;
 }
@@ -431,12 +432,12 @@ hr{
 .project-col:hover{
     letter-spacing: 2px;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.558);
-    scale: 1.05
+    scale: 1.05;
 }
 
 #windsor{
     height: 230px;
-    background-image: url(/Images/windsor.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.475),transparent),url(/Images/windsor.jpg);
     background-size: cover;
     border-radius: 0px;
     padding-top: 20px;
@@ -446,7 +447,7 @@ hr{
 
 #prath{
     height: 230px;
-    background-image: url(/Images/prath.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.475),transparent),url(/Images/prath.jpg);
     background-size: cover;
     border-radius: 0px;
     padding-top: 20px;
@@ -456,7 +457,7 @@ hr{
 
 #ace{
     height: 230px;
-    background-image: url(/Images/Sites/ace.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.475),transparent),url(/Images/Sites/ace.jpg);
     background-size: cover;
     border-radius: 0px;
     padding-top: 20px;
@@ -466,7 +467,7 @@ hr{
 
 #bella{
     height: 230px;
-    background-image: url(/Images/Sites/bella.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.475),transparent),url(/Images/Sites/bella.jpg);
     background-size: cover;
     border-radius: 0px;
     padding-top: 20px;
@@ -476,7 +477,7 @@ hr{
 
 #livi{
     height: 230px;
-    background-image: url(/Images/leviance.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.475),transparent),url(/Images/leviance.jpg);
     background-size: cover;
     border-radius: 0px;
     padding-top: 20px;
@@ -486,7 +487,7 @@ hr{
 
 #teerth{
     height: 230px;
-    background-image: url(/Images/avon.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.475),transparent),url(/Images/avon.jpg);
     background-size: cover;
     border-radius: 0px;
     padding-top: 20px;
@@ -546,7 +547,7 @@ hr{
 
 #avon{
     height: 230px;
-    background-image: url(/Images/Sites/avon.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.475),transparent),url(/Images/Sites/avon.jpg);
     background-size: cover;
     border-radius: 0px;
     padding-top: 20px;
@@ -556,7 +557,7 @@ hr{
 
 #k11{
     height: 230px;
-    background-image: url(/Images/Sites/k11.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.475),transparent),url(/Images/Sites/k11.jpg);
     background-size: cover;
     border-radius: 0px;
     padding-top: 20px;
@@ -566,7 +567,7 @@ hr{
 
 #equilife{
     height: 230px;
-    background-image: url(/Images/baner.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.475),transparent),url(/Images/baner.jpg);
     background-size: cover;
     border-radius: 0px;
     padding-top: 20px;
@@ -604,7 +605,8 @@ hr{
     text-align: center;
     padding-left: 25px;
     padding-right: 25px;
-    font-size: 17px
+    font-size: 17px;
+    font-style:italic
 }
 
 @media(max-width:700px){
