@@ -44,10 +44,6 @@ nav ul li a:hover{
     color: red;
 }
 
-nav a{
-    text-decoration: none;
-}
-
 nav h3{
     color: white;
     font-size: 25px;
@@ -56,6 +52,10 @@ nav h3{
 
 nav span{
     color:red
+}
+
+nav a{
+    text-decoration: none;
 }
 
 nav .fa{

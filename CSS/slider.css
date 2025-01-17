@@ -1,9 +1,9 @@
 .slider-button {
     position: absolute;
-    top: 50%;
+    top: 95%;
     transform: translateY(-50%);
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: rgb(226, 226, 226);
+    color: rgb(255, 0, 0);
     border: none;
     border-radius: 50%;
     width: 40px;
@@ -18,14 +18,15 @@
 }
 
 .slider-button.left {
-    left: 40px;
+    left: 60px;
 }
 
 .slider-button.right {
-    right: 40px;
+    right: 60px;
 }
 
 .slider-button:hover {
+    background: black;
     scale: 1.1;
 }
 
