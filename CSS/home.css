@@ -98,13 +98,70 @@ hr{
     }
 }
 
+/* Description */
+.description{
+    width: 100%;
+    padding: 50px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.description h4{
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.description p{
+    text-align: center;
+    padding: 10px;
+}
+
+.info .more-info{
+    display: inline;
+}
+
+.toggle-btn{
+    display: none;
+}
+
+.title{
+    color:red;
+}
+
+.description h4{
+    font-size: 24px;
+}
+
+.des-tog-btn{
+    color: red;
+}
+
+@media(max-width:700px){
+    .description p{
+        text-align: center;
+        left: 20px;
+        right: 20px;
+    }
+    .info .more-info{
+        display: none;
+    }
+    .info .more-info--show{
+        display: inline;
+    }
+    .toggle-btn{
+        display: block;
+        text-align: center;
+    }
+}
+
+
 /*--- Vision ---*/
 .vision{
     width: 100%;
     background: rgb(255, 255, 255);
     margin: auto;
     text-align: center;
-    margin-top: 2%
+    margin-top: 1%
 }
 
 .vision h3{
@@ -215,10 +272,10 @@ hr{
 }
 
 .box-area{
-    padding-top: 10px;
+    padding-top: 5px;
     display: grid;
     grid-template-columns: 250px 250px;
-    grid-gap: 120px;
+    grid-gap: 100px;
     justify-content: center;
 }
 
@@ -227,15 +284,16 @@ hr{
     grid-auto-flow: column; /* Make grid items flow horizontally */
     grid-auto-columns: 175px; /* Set column size */
     grid-template-columns: 175px;
-    gap: 70px; /* Spacing between grid items */
+    gap: 35px; /* Spacing between grid items */
     overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 30px;
+    padding-top: 5px;
     scroll-behavior: smooth;
     -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
-    scrollbar-width: none;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
     animation: appear 2.5s ease-in-out;
     animation-timeline: view();
     animation-range: entry 0% cover 45%;
-    justify-content: center;
 }
 
 .box{
@@ -244,6 +302,12 @@ hr{
     animation: appear 2.5s ease-in-out;
     animation-timeline: view();
     animation-range: entry 0% cover 45%;
+}
+
+#team-box .slider-button{
+    top: 42%;
+    background-color: black;
+    color: red;
 }
 
 #team-box img{
@@ -258,8 +322,8 @@ hr{
     width: 100%;
     height: 250px;
     object-fit: cover;
-    display: block;
-    transition: transform 0.3s;
+    padding-bottom: 5px;
+    padding-top: 10px;
 }
 
 #name{
@@ -438,7 +502,7 @@ hr{
 
 #windsor{
     height: 230px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.475),transparent),url(/Images/windsor.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.252),transparent),url(/Images/windsor.jpg);
     background-size: cover;
     border-radius: 0px;
     padding-top: 20px;
@@ -448,7 +512,7 @@ hr{
 
 #prath{
     height: 230px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.475),transparent),url(/Images/prath.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.252),transparent),url(/Images/prath.jpg);
     background-size: cover;
     border-radius: 0px;
     padding-top: 20px;
@@ -458,7 +522,7 @@ hr{
 
 #ace{
     height: 230px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.475),transparent),url(/Images/Sites/ace.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.252),transparent),url(/Images/Sites/ace.jpg);
     background-size: cover;
     border-radius: 0px;
     padding-top: 20px;
@@ -468,7 +532,7 @@ hr{
 
 #bella{
     height: 230px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.475),transparent),url(/Images/Sites/bella.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.252),transparent),url(/Images/Sites/bella.jpg);
     background-size: cover;
     border-radius: 0px;
     padding-top: 20px;
@@ -478,7 +542,7 @@ hr{
 
 #livi{
     height: 230px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.475),transparent),url(/Images/leviance.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.252),transparent),url(/Images/leviance.jpg);
     background-size: cover;
     border-radius: 0px;
     padding-top: 20px;
@@ -488,7 +552,7 @@ hr{
 
 #teerth{
     height: 230px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.475),transparent),url(/Images/avon.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.252),transparent),url(/Images/avon.jpg);
     background-size: cover;
     border-radius: 0px;
     padding-top: 20px;
@@ -548,7 +612,7 @@ hr{
 
 #avon{
     height: 230px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.475),transparent),url(/Images/Sites/avon.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.252),transparent),url(/Images/Sites/avon.jpg);
     background-size: cover;
     border-radius: 0px;
     padding-top: 20px;
@@ -558,7 +622,7 @@ hr{
 
 #k11{
     height: 230px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.475),transparent),url(/Images/Sites/k11.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.252),transparent),url(/Images/Sites/k11.jpg);
     background-size: cover;
     border-radius: 0px;
     padding-top: 20px;
@@ -568,7 +632,7 @@ hr{
 
 #equilife{
     height: 230px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.475),transparent),url(/Images/baner.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.252),transparent),url(/Images/baner.jpg);
     background-size: cover;
     border-radius: 0px;
     padding-top: 20px;
@@ -680,8 +744,9 @@ hr{
     padding: 5px;
     padding-bottom: 0;
     text-align: left;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.521);
+    letter-spacing: 0.7px;
 }
 
 .route .tab-text{
