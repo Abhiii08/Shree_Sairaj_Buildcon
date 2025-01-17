@@ -308,6 +308,7 @@ hr{
     animation: appear 2.5s ease-in-out;
     animation-timeline: view();
     animation-range: entry 0% cover 28%;
+    justify-content: center;
 }
 
 .box{
