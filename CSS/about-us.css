@@ -64,9 +64,6 @@ hr{
     padding: 50px;
     padding-bottom: 20px;
     position: relative;
-    animation: appear 2.5s ease-in-out;
-    animation-timeline: view();
-    animation-range: entry 0% cover 45%;
 }
 
 .description h4{
