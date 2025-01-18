@@ -70,7 +70,7 @@ hr{
     font-weight: 400;
     letter-spacing: 1px;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 30px;
     animation: appear 2.5s ease-in-out;
     animation-timeline: view();
     animation-range: entry 0% cover 45%;
@@ -127,9 +127,15 @@ hr{
 /* Team */
 .team{
     width: 100%;
-    min-height: 100vh;
     padding: 10px;
     position: relative;
 }
 
+/* Staff */ 
+.staff{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 10px;
+}
 
