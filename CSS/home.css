@@ -763,10 +763,11 @@ hr{
 
 .route .tab-text{
     background: none;
-    padding: none;
+    padding: 10px;
     top: 25px;
     box-shadow: none;
     color: white;
+    text-align: left;
 }
 
 .route .tab-card button{
