@@ -11,7 +11,7 @@
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     padding: 30px;
     gap:40px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-top: 60px;
 }
 
@@ -28,7 +28,8 @@
 .footer-card img{   
     width: 20px;
     height: 20px;
-    margin:5px
+    margin:5px;
+    display:none;
 }
 
 .footer hr{

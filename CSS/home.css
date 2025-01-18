@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-
 @media(max-width:700px){
     h2{
         font-size: 23px;
@@ -23,13 +22,11 @@
     }
 }
 
-
 hr{
     animation: appear 2.5s ease-in-out;
     animation-timeline: view();
     animation-range: entry 0% cover 35%;
 }
-
 
 /*--- header ---*/
 .header{

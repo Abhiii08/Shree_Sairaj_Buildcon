@@ -58,56 +58,6 @@ hr{
     }
 }
 
-/* Description */
-.description{
-    width: 100%;
-    padding: 50px;
-    padding-bottom: 20px;
-    position: relative;
-}
-
-.description h4{
-    text-align: center;
-    letter-spacing: 1px;
-}
-
-.description p{
-    text-align: center;
-    padding: 10px;
-}
-
-.info .more-info{
-    display: inline;
-}
-
-.toggle-btn{
-    display: none;
-}
-.title{
-    color:red;
-}
-.description h4{
-    font-size: 24px;
-}
-
-@media(max-width:700px){
-    .description p{
-        text-align: center;
-        left: 20px;
-        right: 20px;
-    }
-    .info .more-info{
-        display: none;
-    }
-    .info .more-info--show{
-        display: inline;
-    }
-    .toggle-btn{
-        display: block;
-        text-align: center;
-    }
-}
-
 /* Partners */
 .partners{
     width: 100%;
@@ -156,7 +106,7 @@ hr{
 }
 
 .more-info{
-    display: inline;
+    display: none;
 }
 
 .more-info--show{
