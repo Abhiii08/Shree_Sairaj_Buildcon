@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito Sans", serif;
+}
+
+hr{
+    animation: appear 2.5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0.5;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.header{
+    width: 100%;
+    height: 350px;
+    position: relative;
+    background-image: linear-gradient(transparent,rgba(0, 0, 0, 0.681)), url(/Images/Header.jpg);
+    background-size: cover;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+
+.header-box{
+    width: 90%;
+    position: absolute;
+    top:80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header-box h1{
+    font-size: 2.7vw;
+    text-shadow: 1px 1px 5px rgb(255, 0, 0);
+    letter-spacing: 1.5px;
+    color: white;
+    font-weight: 600;
+    position: relative;
+}
+
+@media(max-width:700px){
+    .header-box h1{
+        font-size: 27px;
+    }
+}
+
+/* Plants and Machinery */
+.plants-machinery{
+    width: 100%;
+    position: relative;
+}
+
+.heading-h2{
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 20px;
+    animation: appear 2.5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
+}
+
+.container{
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 30px;
+    justify-content: center;
+    padding-top: 50px;
+    animation: appear 2.5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
+}
+
+.cards{
+    padding: 20px;
+    background: linear-gradient( rgba(144, 144, 144, 0.6),rgb(255, 255, 255));
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.cards:hover{
+    box-shadow: 0px 0px 10px 5px rgba(255, 0, 0, 0.499); 
+    letter-spacing: 0.7px;
+}
+
+.cards h3{
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.cards p{
+    font-size: 17px;
+    letter-spacing: 0;
+    font-style: italic;
+    padding-top: 5px;
+}
+
+@media(max-width:700px){
+    .container{
+        display: grid; /* Keep the grid layout */
+        grid-auto-flow: column; /* Make grid items flow horizontally */
+        grid-auto-columns: 225px; /* Set column size */
+        grid-template-columns: 225px;
+        gap: 25px; /* Spacing between grid items */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        padding: 30px;
+        scroll-behavior: smooth;
+        -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+        scrollbar-width: none;
+        animation: appear 2.5s ease-in-out;
+        animation-timeline: view();
+        animation-range: entry 0% cover 28%;
+        justify-content: flex-start;
+    }
+}
