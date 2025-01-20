@@ -75,7 +75,7 @@ hr{
 .container{
     display: grid;
     height: auto;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 30px;
     padding: 30px;
     justify-content: center;
@@ -114,8 +114,8 @@ hr{
     .container{
         display: grid; /* Keep the grid layout */
         grid-auto-flow: column; /* Make grid items flow horizontally */
-        grid-auto-columns: 225px; /* Set column size */
-        grid-template-columns: 225px;
+        grid-auto-columns: 200px; /* Set column size */
+        grid-template-columns: 200px;
         gap: 25px; /* Spacing between grid items */
         overflow-x: auto; /* Enable horizontal scrolling */
         padding: 30px;

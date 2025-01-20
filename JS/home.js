@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         updateCounter(); // Start the animation for this counter
     }
-
     // Set up the Intersection Observer
     const observerOptions = {
         root: null, // Use the viewport as the root
