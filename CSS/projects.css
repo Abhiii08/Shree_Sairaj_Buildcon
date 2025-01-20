@@ -67,7 +67,8 @@
     display: flex;
     justify-content: center;
     padding-top: 15px;
-    gap: 30px
+    gap: 30px;
+    padding-bottom: 20px
 }
 
 .images img{
@@ -82,6 +83,8 @@
     }
     .cards{
         flex-direction: column;
+        align-items: center;
+        text-align: center;        
     }
     .images{
         gap: 35px;/* Spacing between grid items */
@@ -93,6 +96,10 @@
         scrollbar-width: none;
         justify-content: flex-start;
     }
+    .header-box h2::after{
+        width: 70%;
+        left: 15%;
+    }
 }
 
 /* Solitare */ 
@@ -100,4 +107,5 @@
     width: 100%;
     min-height: 100vh;
     margin: auto;
+    padding-top: 30px;
 }
