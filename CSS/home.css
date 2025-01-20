@@ -496,11 +496,7 @@ hr{
 .project-col{
     transition: 0.3s;
     position: relative;
-    animation: appear 2.5s ease-in-out;
-    animation-timeline: view();
-    animation-range: entry 0% cover 30%;
 }
-
 
 .project-col p{
     letter-spacing: 0;
