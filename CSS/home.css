@@ -174,7 +174,7 @@ hr{
     scale: 1;
     animation: appear 2.5s ease-in-out;
     animation-timeline: view();
-    animation-range: entry 0% cover 28%;
+    animation-range: entry 0% cover 35%;
 } 
 
 .vision-box:hover{
@@ -226,7 +226,7 @@ hr{
         scrollbar-width: none;
         animation: appear 2.5s ease-in-out;
         animation-timeline: view();
-        animation-range: entry 0% cover 28%;
+        animation-range: entry 0% cover 35%;
     }
     .vision-box:hover{
         box-shadow: none;
@@ -274,15 +274,19 @@ hr{
     letter-spacing: 1px;
     animation: appear 2.5s ease-in-out;
     animation-timeline: view();
-    animation-range: entry 0% cover 28%;
+    animation-range: entry 0% cover 35%;
     font-weight: 400;
 }
 
 .box-area{
     padding-top: 5px;
-    display: grid;
-    grid-template-columns: 250px 250px;
-    grid-gap: 100px;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    animation: appear 2.5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
 }
 
 #partners{
@@ -290,42 +294,34 @@ hr{
 }
 
 #team-box{
-    display: grid; /* Keep the grid layout */
-    grid-auto-flow: column; /* Make grid items flow horizontally */
-    grid-auto-columns: 175px; /* Set column size */
-    grid-template-columns: 175px;
-    gap: 35px; /* Spacing between grid items */
+    display: flex; /* Keep the grid layout */
+    gap: 35px;/* Spacing between grid items */
     overflow-x: auto; /* Enable horizontal scrolling */
-    padding: 30px;
+    padding: 20px;
     padding-top: 5px;
     scroll-behavior: smooth;
     -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
     scrollbar-width: none; /* Hide scrollbar for Firefox */
     animation: appear 2.5s ease-in-out;
     animation-timeline: view();
-    animation-range: entry 0% cover 28%;
+    animation-range: entry 0% cover 35%;
     justify-content: center;
 }
 
 .box{
     position: relative;
-    overflow: hidden;
-    animation: appear 2.5s ease-in-out;
-    animation-timeline: view();
-    animation-range: entry 0% cover 28%;
+    align-items: center;
 }
 
 #team-box img{
-    width: 100%;
-    height: auto;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
-    display: block;
-    transition: transform 0.3s;
 }
 
 .box img{
-    width: 100%;
-    height: 250px;
+    width: 275px;
+    height: 275px;
     object-fit: cover;
     padding-bottom: 5px;
     padding-top: 10px;
@@ -346,31 +342,21 @@ hr{
     font-size: 14px;
 }
 
-.team .slider-button{
-    top: 90%;
-    color:red
-}
-
 @media(max-width:700px){
     .team h2{
         font-size: 27px;
     }
     .box-area{
-        grid-template-columns: 250px;
-        gap: 0px;
+        flex-direction: column;
+        gap: 10px
     }
-    .box img{
-        height: 275px;
-    }
+
     #name{
         font-size: 20px;
         letter-spacing: 0.5px;
     }
     #team-box{
-        display: grid; /* Keep the grid layout */
-        grid-auto-flow: column; /* Make grid items flow horizontally */
-        grid-auto-columns: 150px; /* Set column size */
-        grid-template-columns: 150px;
+        flex-direction: row; /* Keep the grid layout */
         gap: 20px; /* Spacing between grid items */
         overflow-x: auto; /* Enable horizontal scrolling */
         padding-left: 30px;
@@ -378,9 +364,6 @@ hr{
         scroll-behavior: smooth;
         -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
         scrollbar-width: none;
-        animation: appear 2.5s ease-in-out;
-        animation-timeline: view();
-        animation-range: entry 0% cover 28%;
         justify-content: flex-start;
     }
     #team-box h3{
@@ -394,7 +377,6 @@ hr{
     position: relative;
     z-index: 0;
     margin: auto;
-    padding-bottom: 30px;
     background: rgb(255, 255, 255);
     text-align: center;
 }
@@ -406,6 +388,28 @@ hr{
 
 .col p{
     color: red;
+}
+
+.col{
+    position: relative;
+    cursor: pointer;
+    padding-top: 45px;
+}
+
+.col::after{
+    content: '';
+    position: absolute;
+    height: 2.5px;
+    width: 0%;
+    left: 20%;
+    bottom: -5px;
+    background-color: red;
+    transition: 0.3s;
+    border-radius: 2px
+}
+
+.col:hover::after{
+    width: 60%;
 }
 
 .col span{
@@ -460,7 +464,7 @@ hr{
     font-size: 27px;
     animation: appear 2.5s ease-in-out;
     animation-timeline: view();
-    animation-range: entry 0% cover 28%;
+    animation-range: entry 0% cover 35%;
     letter-spacing: 1px;
     font-weight: 400;
 }
@@ -478,7 +482,7 @@ hr{
     scrollbar-width: none; /* Hide scrollbar for Firefox */
     animation: appear 2.5s ease-in-out;
     animation-timeline: view();
-    animation-range: entry 0% cover 28%;
+    animation-range: entry 0% cover 35%;
     padding-bottom: 50px;
 }
 
@@ -502,8 +506,7 @@ hr{
 }
 
 .project-col:hover{
-    letter-spacing: 2px;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.558);
+    letter-spacing: 1.5px;
     scale: 1.05;
 }
 
@@ -612,7 +615,7 @@ hr{
     font-size: 27px;
     animation: appear 2.5s ease-in-out;
     animation-timeline: view();
-    animation-range: entry 0% cover 28%;
+    animation-range: entry 0% cover 35%;
     letter-spacing: 1px;
     font-weight: 400;
 }
@@ -667,6 +670,7 @@ hr{
     width: 100%;
     position: relative;
     padding: 10px;
+    padding-top: 30px;
 }
 
 .container{
@@ -675,13 +679,15 @@ hr{
     justify-content: center;
     gap: 25px;
     align-items: center;
+    animation: appear 2.5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
 }
 
 .tab img{
     width: 300px;
-    height: 250px;
-    object-fit: cover;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.499); 
+    height: 230px;
+    object-fit: cover; 
     align-items: center;
 }
 
@@ -690,6 +696,7 @@ hr{
     transition: 0.3s;
     letter-spacing: 1px;
     position: relative;
+    cursor: pointer;
 }
 
 .tab:hover{
@@ -703,20 +710,35 @@ hr{
 }
 
 .tab-title h3{
-    font-size: 21.5px;
+    font-size: 18px;
     font-weight: 600;
+}
+
+.tab::after{
+    content: '';
+    position: absolute;
+    height: 2.5px;
+    width: 0%;
+    left: 20%;
+    bottom: 10px;
+    background-color: red;
+    transition: 0.3s;
+}
+
+.tab:hover::after{
+    width: 60%;
 }
 
 .tab-title button{
     position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%);
-    padding: 5.5px;
+    top: 63%;
+    left: 5%;
+    padding: 5px;
     border: 0.5px solid black;
-    padding-left: 7.5px;
-    padding-right: 7.5px;
+    padding-left: 7px;
+    padding-right: 7px;
     transition: 0.3s;
+    font-size: 15px;
 }
 
 .tab-title button:hover{

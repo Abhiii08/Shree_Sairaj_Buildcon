@@ -40,7 +40,6 @@
 }
 
 .info{
-    padding-top: 15px;
 }
 
 .info h3{
@@ -59,7 +58,7 @@
     display: flex;
     justify-content: center;
     padding-top: 15px;
-    gap: 15px
+    gap: 35px
 }
 
 .images img{
@@ -69,7 +68,19 @@
 }
 
 @media(max-width: 700px){
+    .container{
+        width: 100%;
+    }
     .cards{
         flex-direction: column;
+    }
+    .images{
+        gap: 35px;/* Spacing between grid items */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        padding: 20px;
+        padding-top: 5px;
+        scroll-behavior: smooth;
+        -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+        scrollbar-width: none;
     }
 }
