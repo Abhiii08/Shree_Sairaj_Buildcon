@@ -52,7 +52,6 @@
 .fifteen-current{
     width: 100%;
     position: relative;
-    min-height: 100vh;
 }
 
 .heading-h2{
@@ -121,7 +120,6 @@ tbody tr:nth-of-type(even){
 .ten-fourteen{
     width: 100%;
     position: relative;
-    min-height: 100vh;
     padding-top: 10px;
 }
 
@@ -143,10 +141,54 @@ tbody tr:nth-of-type(even){
     border-bottom: 1.5px solid rgba(0, 52, 184, 0.71);
 }
 
-.ten-table th, td{
+/* 2009 - 2005 */ 
+.five-nine{
+    width: 100%;
+    position: relative;
     padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 12px;
-    padding-right: 12px;
-    width: 15px;
+}
+
+.five-table{
+    border-collapse: collapse;
+    font-size: 1em;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.five-table thead tr{
+    background-color: rgba(21, 184, 0, 0.71);
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-weight: bold;
+}
+
+.five-table tbody tr:last-of-type{
+    border-bottom: 1.5px solid rgba(21, 184, 0, 0.71);
+}
+
+/* 2000 - 2004 */
+
+.zero-four{
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    padding-top: 10px;
+}
+
+.zero-table{
+    border-collapse: collapse;
+    font-size: 1em;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.zero-table thead tr{
+    background-color: rgba(184, 172, 0, 0.71);
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-weight: bold;
+}
+
+.zero-table tbody tr:last-of-type{
+    border-bottom: 1.5px solid rgba(184, 172, 0, 0.71);
 }
