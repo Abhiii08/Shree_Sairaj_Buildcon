@@ -44,8 +44,7 @@ hr{
     object-fit: cover;
     top: 0;
     right: 0;
-    z-index: -1;
-    
+    z-index: -1
 }
 
 @media(min-aspect-ratio:16/9){
@@ -163,7 +162,7 @@ hr{
 
 .vision h3{
     font-size: 27px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.784);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.496);
     font-weight: 600;
 }
 
@@ -663,125 +662,70 @@ hr{
     }
 }
 
-/* Tabs island */
+/* Tabs */
 .tabs{
     width: 100%;
     position: relative;
-    z-index: 0;
-    margin: auto;
-    padding-bottom: 30px;
-    background: rgb(255, 255, 255);
+    padding: 10px;
 }
 
+.container{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+}
 
-#tab-textbox{
+.tab img{
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.499); 
+    align-items: center;
+}
+
+.tab{
+    scale: 1;
+    transition: 0.3s;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.tab:hover{
+    scale: 1.05;
+    letter-spacing: 2px;
+}
+
+.tab-title{
     text-align: center;
-    padding-left: 25px;
-    padding-right: 25px;
-    font-size: 17px;
-    font-style:italic
+    padding: 15px;
+}
+
+.tab-title h3{
+    font-size: 21.5px;
+    font-weight: 600;
+}
+
+.tab-title button{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 5.5px;
+    border: 0.5px solid black;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    transition: 0.3s;
+}
+
+.tab-title button:hover{
+    background: black;
+    color: white;
 }
 
 @media(max-width:700px){
-}
-
-/* Routes */
-.route{
-    width: 100%;
-    position: relative;
-    z-index: 0;
-    margin: auto;
-    padding-bottom: 30px;
-    background: rgb(255, 255, 255);
-}
-
-.tabs-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    padding: 40px;
-    gap: 40px;
-    animation: appear 2.5s ease-in-out;
-    animation-timeline: view();
-    animation-range: entry 0% cover 28%;
-}
-
-.tab-card{
-    width: 100%;
-    height: 300px;
-    color: rgb(255, 255, 255);
-    background: linear-gradient(rgba(255, 0, 0, 70%),white);
-    padding: 20px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.595);
-    position: relative;
-    transition: 0.5s;
-    cursor: pointer;
-    animation: appear 2.5s ease-in-out;
-    animation-timeline: view();
-    animation-range: entry 0% cover 28%;
-}
-
-.tab-card img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.tab-card:hover{
-    color: rgb(0, 0, 0);
-    background: red;
-}
-
-.tab-card button{
-    position: absolute;
-    top: 80%;
-    padding: 7px 15px;
-    font-size: 15px;
-    transition: 0.3s;
-    border: 0;
-    text-decoration: none;
-    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.521);
-}
-
-.tab-text{
-    position: absolute;
-    top:65%;
-    background: rgb(255, 0, 0);
-    padding: 5px;
-    padding-bottom: 0;
-    text-align: left;
-    color: rgb(0, 0, 0);
-    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.521);
-    letter-spacing: 0.7px;
-}
-
-.route .tab-text{
-    background: none;
-    padding: 10px;
-    top: 25px;
-    box-shadow: none;
-    color: white;
-    text-align: left;
-}
-
-.route .tab-card button{
-    top:70%
-}
-
-.tab-text h3{
-    font-size: 18px;
-    padding-right: 3px;
-    padding-left: 3px;
-}
-
-.route .tab-text h3{
-    font-size: 25px;
-}
-
-.tab-card button:hover{
-    background: black;
-    color: rgb(255, 255, 255);
-    box-shadow: none
+    .container{
+        flex-direction: column;
+    }
 }
