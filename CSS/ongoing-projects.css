@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito Sans", serif;
+}
+
+.ace{
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    padding-top: 80px;
+}
+
+.header-box{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.header-box h2{
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.container{
+    width: 60%;
+    padding: 10px;
+}
+
+.cards{
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+}
+
+.cards img{
+    width: 375px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.info{
+    padding-top: 15px;
+}
+
+.info h3{
+    font-size: 25px;
+    letter-spacing: 0.7px;
+    font-weight: 500;
+}
+
+.info p{
+    font-size: 17px;
+    font-weight: 350;
+    padding-bottom: 5px;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    gap: 15px
+}
+
+.images img{
+    width: 325px;
+    height: 250px;
+    object-fit: cover
+}
+
+@media(max-width: 700px){
+    .cards{
+        flex-direction: column;
+    }
+}

@@ -131,14 +131,14 @@ tbody tr:nth-of-type(even){
 }
 
 .ten-table thead tr{
-    background-color: rgba(0, 52, 184, 0.71);
+    background-color: rgba(255, 0, 0, 0.71);
     color: rgb(0, 0, 0);
     text-align: left;
     font-weight: bold;
 }
 
 .ten-table tbody tr:last-of-type{
-    border-bottom: 1.5px solid rgba(0, 52, 184, 0.71);
+    border-bottom: 1.5px solid rgba(255, 0, 0, 0.71);
 }
 
 /* 2009 - 2005 */ 
@@ -156,14 +156,14 @@ tbody tr:nth-of-type(even){
 }
 
 .five-table thead tr{
-    background-color: rgba(21, 184, 0, 0.71);
+    background-color: rgba(255, 0, 0, 0.71);
     color: rgb(0, 0, 0);
     text-align: left;
     font-weight: bold;
 }
 
 .five-table tbody tr:last-of-type{
-    border-bottom: 1.5px solid rgba(21, 184, 0, 0.71);
+    border-bottom: 1.5px solid rgba(255, 0, 0, 0.71);
 }
 
 /* 2000 - 2004 */
@@ -183,12 +183,12 @@ tbody tr:nth-of-type(even){
 }
 
 .zero-table thead tr{
-    background-color: rgba(184, 172, 0, 0.71);
+    background-color: rgba(255, 0, 0, 0.71);
     color: rgb(0, 0, 0);
     text-align: left;
     font-weight: bold;
 }
 
 .zero-table tbody tr:last-of-type{
-    border-bottom: 1.5px solid rgba(184, 172, 0, 0.71);
+    border-bottom: 1.5px solid rgba(255, 0, 0, 0.71);
 }
