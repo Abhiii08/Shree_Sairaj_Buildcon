@@ -278,30 +278,30 @@ hr{
     padding-top: 25px;
     display: flex;
     gap: 100px;
-    align-items: center;
-    justify-content: center;
     animation: appear 3s ease-in-out;
     animation-timeline: view();
     animation-range: entry 0% cover 35%;
     padding-bottom: 25px;
-
+    justify-content: center;
+    align-items: center;
 }
 
 #partners{
     justify-content: center;
 }
 
-#team-box{
+.team-area{
     display: flex; /* Keep the grid layout */
     gap: 35px;/* Spacing between grid items */
     overflow-x: auto; /* Enable horizontal scrolling */
     padding: 20px;
     padding-top: 25px;
+    justify-content: center;
     scroll-behavior: smooth; /* Hide scrollbar for Firefox */
+    align-items: center;
     animation: appear 3s ease-in-out;
     animation-timeline: view();
     animation-range: entry 0% cover 35%;
-    align-items: center;
 }
 
 .box{
@@ -355,20 +355,11 @@ hr{
         flex-direction: column;
         gap: 10px
     }
-
     #name{
         font-size: 20px;
         letter-spacing: 0.5px;
     }
-    #team-box{
-        flex-direction: row; /* Keep the grid layout */
-        gap: 20px; /* Spacing between grid items */
-        overflow-x: auto; /* Enable horizontal scrolling */
-        padding-left: 15px;
-        padding-right: 15px;
-        scroll-behavior: smooth;
-        -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
-        scrollbar-width: none;
+    .team-area{
         justify-content: flex-start;
     }
     #team-box h3{
