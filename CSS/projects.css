@@ -13,8 +13,16 @@
     }
 }
 
+.header{
+    width: 100%;
+    background-image: url(/Images/Header.jpg);
+    background-size: cover;
+    height: 375px;
+    position: relative;
+}
+
 hr{
-    animation: appear 2.5s ease-in-out;
+    animation: appear 3s ease-in-out;
     animation-timeline: view();
     animation-range: entry 0% cover 35%;
 }
@@ -25,10 +33,18 @@ hr{
 
 .header-box{
     text-align: center;
-    padding-top: 75px;
-    animation: appear 2.5s ease-in-out;
+    padding-top: 25px;
+    animation: appear 3s ease-in-out;
     animation-timeline: view();
     animation-range: entry 0% cover 35%;
+}
+
+.header button{
+
+}
+
+.header button:hover{
+    background: linear-gradient(rgba(255, 0, 0, 0.836),rgba(0, 0, 0, 0.836));
 }
 
 .header-box h2{
@@ -39,10 +55,10 @@ hr{
 }
 
 .container{
-    width: 70%;
+    width: 80%;
     padding: 10px;
     padding-top: 45px;
-    animation: appear 2.5s ease-in-out;
+    animation: appear 3s ease-in-out;
     animation-timeline: view();
     animation-range: entry 0% cover 35%;
 }
@@ -74,16 +90,22 @@ hr{
 
 .images{
     display: flex;
-    justify-content: center;
+    align-items: center;
     padding-top: 15px;
     gap: 30px;
-    padding-bottom: 20px
+    padding-bottom: 20px;
+    overflow-x: auto;
 }
 
 .images img{
     width: 325px;
     height: 225px;
-    object-fit: cover
+    object-fit: cover;
+    transition: 0.3s
+}
+
+.images img:hover{
+    scale: 1.05
 }
 
 @media(max-width: 700px){
