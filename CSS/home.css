@@ -246,7 +246,6 @@ hr{
     width: 100%;
     position: relative;
     z-index: 0;
-    margin: auto;
     padding-top: 30px;
     padding-bottom: 20px;
     background: rgb(255, 255, 255);
@@ -258,7 +257,6 @@ hr{
     position: relative;
     z-index: 0;
     margin: auto;
-    padding-top: 10px;
     padding-bottom: 30px;
     background: rgb(255, 255, 255);
     color: white;  
