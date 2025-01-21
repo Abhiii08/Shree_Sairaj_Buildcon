@@ -1,0 +1,307 @@
+<div class="project-container">
+            <button class="slider-button left" onclick="scrollLeft()">&#8249;</button>
+
+            <div class="project-grid slide">
+                <a href="projects.html#ace">
+                    <div class="project-col" id="ace">
+                        <h3>Ace Atmosphere</h3>
+                        <p>Ravet, Pune</p>
+                    </div>
+                </a>
+                <a href="/Templates/windsor.html">
+                    <div class="project-col" id="windsor">
+                        <h3>Windsor County</h3>
+                        <p>Pune</p>
+                    </div>
+                </a>
+                <a href="/Templates/prath.html"> 
+                    <div class="project-col" id="prath">
+                        <h3>Prathamesh Sanskruti</h3>
+                        <p>Pune</p>
+                    </div>
+                </a>
+                <a href="/Templates/bella.html">
+                    <div class="project-col" id="bella">
+                        <h3>Bella Casa</h3>
+                        <p>Ambegaon, Pune</p>
+                    </div>
+                </a>
+                <a href="/Templates/levi.html">
+                    <div class="project-col" id="livi">
+                        <h3>Livience</h3>
+                        <p>Pashan, Pune</p>
+                    </div>
+                </a>
+                <a href="/Templates/tirth.html">
+                    <div class="project-col" id="teerth">
+                        <h3>Teerth Assisted Living Hostel</h3>
+                        <p>Sus, Pune</p>
+                    </div>
+                </a>
+            </div>
+            <button class="slider-button right" onclick="scrollRight()">&#8250;</button>
+        </div>
+
+        <div class="project-container">
+            <button class="slider-button left" onclick="scrollLeft()">&#8249;</button>
+            <div class="project-grid slide">
+                <a href="completed.projects.html">
+                    <div class="project-col" id="avon">
+                        <h3>Avon Vista</h3>
+                        <p>Wakad, Pune</p>
+                    </div>
+                </a>
+                <a href="completed.projects.html"><div class="project-col" id="k11">
+                    <h3>K-11 La Vida</h3>
+                    <p>Balewadi, Pune</p>
+                </div>
+                </a>
+                <a href="completed.projects.html">
+                    <div class="project-col" id="windsor">
+                        <h3>Windsor County H building</h3>
+                        <p>Ambegaon, Pune</p>
+                    </div>
+                </a>
+                <a href="completed.projects.html">
+                    <div class="project-col" id="equilife">
+                        <h3>Equilife Homes</h3>
+                         <p>Mahalunge, Pune</p>
+                     </div>
+                </a>
+            </div>
+            <button class="slider-button right" onclick="scrollRight()">&#8250;</button>
+        </div>
+
+
+
+.ongoing-projects{
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    margin: auto;
+    padding-bottom: 30px;
+    background: rgb(255, 255, 255);
+    
+}
+
+.project-grid h3{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.project-grid a{
+    text-decoration: none;
+    color: white;
+}
+
+.project-text p{
+    font-size: 14px;
+}
+
+.ongoing-projects h2{
+    text-align: center;
+    margin-top: 1.5%;
+    padding-bottom: 10px;
+    font-size: 27px;
+    animation: appear 2.5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.project-grid {
+    display: grid; /* Keep the grid layout */
+    grid-auto-flow: column; /* Make grid items flow horizontally */
+    grid-auto-columns: 300px; /* Set column size */
+    grid-template-columns: 300px;
+    gap: 20px; /* Spacing between grid items */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 30px;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    animation: appear 2.5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+    padding-bottom: 50px;
+}
+
+.project-grid::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+.project-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.project-col{
+    transition: 0.3s;
+    position: relative;
+}
+
+.project-col p{
+    letter-spacing: 0;
+}
+
+.project-col:hover{
+    letter-spacing: 1.5px;
+    scale: 1.05;
+}
+
+#windsor{
+    height: 230px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.252),transparent),url(/Images/windsor.jpg);
+    background-size: cover;
+    border-radius: 0px;
+    padding-top: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+#prath{
+    height: 230px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.252),transparent),url(/Images/prath.jpg);
+    background-size: cover;
+    border-radius: 0px;
+    padding-top: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+#ace{
+    height: 230px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.252),transparent),url(/Images/Sites/ace.jpg);
+    background-size: cover;
+    border-radius: 0px;
+    padding-top: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+#bella{
+    height: 230px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.252),transparent),url(/Images/Sites/bella.jpg);
+    background-size: cover;
+    border-radius: 0px;
+    padding-top: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+#livi{
+    height: 230px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.252),transparent),url(/Images/leviance.jpg);
+    background-size: cover;
+    border-radius: 0px;
+    padding-top: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+#teerth{
+    height: 230px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.252),transparent),url(/Images/avon.jpg);
+    background-size: cover;
+    border-radius: 0px;
+    padding-top: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.project-col{
+    text-align: center;
+}
+
+@media(max-width:700px){
+    .ongoing-projects h2{
+        font-size: 27px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+    .slider-button{
+        display: none;
+    }
+    .project-grid{
+        grid-template-columns: 250px;
+        grid-auto-columns: 250px;
+    }
+    #windsor, #ace, #bella, #livi, #teerth, #prath{
+        height: 200px;
+    }
+    .project-col:hover{
+        letter-spacing: 0;
+        box-shadow: none;
+        scale: 0
+    }
+}
+
+/* Completed projects */
+.completed-projects{
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    margin: auto;
+    padding-bottom: 30px;
+    background: rgb(255, 255, 255);
+    
+}
+
+.completed-projects h2{
+    text-align: center;
+    margin-top: 1.5%;
+    padding-bottom: 10px;
+    font-size: 27px;
+    animation: appear 2.5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+#avon{
+    height: 230px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.252),transparent),url(/Images/Sites/avon.jpg);
+    background-size: cover;
+    border-radius: 0px;
+    padding-top: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+#k11{
+    height: 230px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.252),transparent),url(/Images/Sites/k11.jpg);
+    background-size: cover;
+    border-radius: 0px;
+    padding-top: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+#equilife{
+    height: 230px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.252),transparent),url(/Images/baner.jpg);
+    background-size: cover;
+    border-radius: 0px;
+    padding-top: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+@media(max-width:700px) {
+    .completed-projects h2{
+        font-size: 27px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+    .slider-button{
+        display: none;
+    }
+    #avon, #k11, #windsor, #equilife{
+        height: 200px
+    }
+}

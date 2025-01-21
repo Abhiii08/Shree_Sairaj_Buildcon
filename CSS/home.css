@@ -13,11 +13,9 @@
 
 @keyframes appear {
     from {
-        opacity: 0.5;
         transform: scale(0.8);
     }
     to {
-        opacity: 1;
         transform: scale(1);
     }
 }
@@ -175,6 +173,7 @@ hr{
     animation: appear 2.5s ease-in-out;
     animation-timeline: view();
     animation-range: entry 0% cover 35%;
+    cursor: pointer;
 } 
 
 .vision-box:hover{
@@ -287,6 +286,7 @@ hr{
     animation: appear 2.5s ease-in-out;
     animation-timeline: view();
     animation-range: entry 0% cover 35%;
+    padding-bottom: 25px;
 }
 
 #partners{
@@ -336,7 +336,7 @@ hr{
 }
 
 .team-text{
-    color: black; 
+    color: rgb(85, 85, 85); 
     text-align: center; 
     font-style: italic; 
     font-size: 14px;
@@ -359,8 +359,8 @@ hr{
         flex-direction: row; /* Keep the grid layout */
         gap: 20px; /* Spacing between grid items */
         overflow-x: auto; /* Enable horizontal scrolling */
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
         scroll-behavior: smooth;
         -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
         scrollbar-width: none;
@@ -428,242 +428,111 @@ hr{
 }
 
 .value img{
-    width: 35px;
-    height: 35px;
+    width: 37.5px;
+    height: 37.5px;
 }
 
-/* Ongoing Projects */
+/* Ongoing Projects and Recently completed projects*/
 .ongoing-projects{
     width: 100%;
-    position: relative;
-    z-index: 0;
-    margin: auto;
-    padding-bottom: 30px;
-    background: rgb(255, 255, 255);
-    
+    padding-bottom: 25px;
 }
 
-.project-grid h3{
-    font-size: 20px;
-    text-decoration: none;
+.completed-projects{
+    width: 100%;
 }
 
-.project-grid a{
-    text-decoration: none;
-    color: white;
-}
-
-.project-text p{
-    font-size: 14px;
-}
-
-.ongoing-projects h2{
-    text-align: center;
-    margin-top: 1.5%;
-    padding-bottom: 10px;
+.project-heading{
     font-size: 27px;
-    animation: appear 2.5s ease-in-out;
-    animation-timeline: view();
-    animation-range: entry 0% cover 35%;
     letter-spacing: 1px;
+    text-align: center;
     font-weight: 400;
-}
-
-.project-grid {
-    display: grid; /* Keep the grid layout */
-    grid-auto-flow: column; /* Make grid items flow horizontally */
-    grid-auto-columns: 300px; /* Set column size */
-    grid-template-columns: 300px;
-    gap: 20px; /* Spacing between grid items */
-    overflow-x: auto; /* Enable horizontal scrolling */
-    padding: 30px;
-    scroll-behavior: smooth;
-    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
-    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    padding:20px;
     animation: appear 2.5s ease-in-out;
     animation-timeline: view();
     animation-range: entry 0% cover 35%;
-    padding-bottom: 50px;
 }
-
-.project-grid::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for WebKit browsers */
-}
-
-.project-container {
-    position: relative;
+ 
+.project-container{
     display: flex;
     justify-content: center;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    overflow-x: auto;
+    gap: 30px;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none;
+    animation: appear 2.5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
 }
 
-.project-col{
+.project{
+    scale: 1;
     transition: 0.3s;
-    position: relative;
 }
 
-.project-col p{
-    letter-spacing: 0;
-}
-
-.project-col:hover{
-    letter-spacing: 1.5px;
+.project:hover{
     scale: 1.05;
 }
 
-#windsor{
-    height: 230px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.252),transparent),url(/Images/windsor.jpg);
-    background-size: cover;
-    border-radius: 0px;
-    padding-top: 20px;
-    color: white;
-    text-shadow: 1px 1px 2px black;
+.project:hover ::after{
+    width: 80%;
 }
 
-#prath{
-    height: 230px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.252),transparent),url(/Images/prath.jpg);
-    background-size: cover;
-    border-radius: 0px;
-    padding-top: 20px;
-    color: white;
-    text-shadow: 1px 1px 2px black;
+.project:hover .project-title h5{
+    letter-spacing: 1.5px;
 }
 
-#ace{
-    height: 230px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.252),transparent),url(/Images/Sites/ace.jpg);
-    background-size: cover;
-    border-radius: 0px;
-    padding-top: 20px;
-    color: white;
-    text-shadow: 1px 1px 2px black;
+.project img{
+    width: 225px;
+    height: 175px;
+    object-fit: cover;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
-#bella{
-    height: 230px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.252),transparent),url(/Images/Sites/bella.jpg);
-    background-size: cover;
-    border-radius: 0px;
-    padding-top: 20px;
-    color: white;
-    text-shadow: 1px 1px 2px black;
-}
-
-#livi{
-    height: 230px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.252),transparent),url(/Images/leviance.jpg);
-    background-size: cover;
-    border-radius: 0px;
-    padding-top: 20px;
-    color: white;
-    text-shadow: 1px 1px 2px black;
-}
-
-#teerth{
-    height: 230px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.252),transparent),url(/Images/avon.jpg);
-    background-size: cover;
-    border-radius: 0px;
-    padding-top: 20px;
-    color: white;
-    text-shadow: 1px 1px 2px black;
-}
-
-.project-col{
+.project-title h5{
     text-align: center;
+    padding-top: 10px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    position: relative;
+    transition: 0.3s;
+    color: black;
+}
+
+.project-title h5::after{
+    content: '';
+    height: 2px;
+    background-color: red;
+    width: 0%;
+    position: absolute;
+    left: 10%;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.project-title p{
+    text-align: center;
+    color: rgb(85, 85, 85);
+    font-size: 15px;
+    letter-spacing: 0;
+}
+
+.project a{
+    text-decoration: none;
 }
 
 @media(max-width:700px){
-    .ongoing-projects h2{
-        font-size: 27px;
-        padding-top: 15px;
-        padding-bottom: 10px;
-    }
-    .slider-button{
-        display: none;
-    }
-    .project-grid{
-        grid-template-columns: 250px;
-        grid-auto-columns: 250px;
-    }
-    #windsor, #ace, #bella, #livi, #teerth, #prath{
-        height: 200px;
-    }
-    .project-col:hover{
-        letter-spacing: 0;
-        box-shadow: none;
-        scale: 0
+    .project-container{
+        justify-content: flex-start;
     }
 }
 
-/* Completed projects */
-.completed-projects{
-    width: 100%;
-    position: relative;
-    z-index: 0;
-    margin: auto;
-    padding-bottom: 30px;
-    background: rgb(255, 255, 255);
-    
-}
-
-.completed-projects h2{
-    text-align: center;
-    margin-top: 1.5%;
-    padding-bottom: 10px;
-    font-size: 27px;
-    animation: appear 2.5s ease-in-out;
-    animation-timeline: view();
-    animation-range: entry 0% cover 35%;
-    letter-spacing: 1px;
-    font-weight: 400;
-}
-
-#avon{
-    height: 230px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.252),transparent),url(/Images/Sites/avon.jpg);
-    background-size: cover;
-    border-radius: 0px;
-    padding-top: 20px;
-    color: white;
-    text-shadow: 1px 1px 2px black;
-}
-
-#k11{
-    height: 230px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.252),transparent),url(/Images/Sites/k11.jpg);
-    background-size: cover;
-    border-radius: 0px;
-    padding-top: 20px;
-    color: white;
-    text-shadow: 1px 1px 2px black;
-}
-
-#equilife{
-    height: 230px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.252),transparent),url(/Images/baner.jpg);
-    background-size: cover;
-    border-radius: 0px;
-    padding-top: 20px;
-    color: white;
-    text-shadow: 1px 1px 2px black;
-}
-
-
-@media(max-width:700px) {
-    .completed-projects h2{
-        font-size: 27px;
-        padding-top: 15px;
-        padding-bottom: 10px;
-    }
-    .slider-button{
-        display: none;
-    }
-    #avon, #k11, #windsor, #equilife{
-        height: 200px
-    }
-}
 
 /* Tabs */
 .tabs{
@@ -676,9 +545,10 @@ hr{
 .container{
     display: flex;
     padding: 10px;
-    justify-content: center;
     gap: 25px;
     align-items: center;
+    padding-top: 25px;
+    overflow-x: auto;
     animation: appear 2.5s ease-in-out;
     animation-timeline: view();
     animation-range: entry 0% cover 35%;
@@ -709,6 +579,10 @@ hr{
     padding: 15px;
 }
 
+.tab:hover button{
+    display: inline;
+}
+
 .tab-title h3{
     font-size: 18px;
     font-weight: 600;
@@ -717,7 +591,7 @@ hr{
 .tab::after{
     content: '';
     position: absolute;
-    height: 2.5px;
+    height: 2px;
     width: 0%;
     left: 20%;
     bottom: 10px;
@@ -732,22 +606,29 @@ hr{
 .tab-title button{
     position: absolute;
     top: 63%;
-    left: 5%;
+    left: 35%;
     padding: 5px;
-    border: 0.5px solid black;
+    border: 0.2px solid rgb(255, 2, 2);
     padding-left: 7px;
     padding-right: 7px;
     transition: 0.3s;
     font-size: 15px;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.838);
 }
 
 .tab-title button:hover{
-    background: black;
+    background: rgba(0, 0, 0, 0.838);
     color: white;
 }
 
 @media(max-width:700px){
     .container{
         flex-direction: column;
+        justify-content: flex-start;
+    }
+    .tab-title button{
+        display: block;
+        left: 5%;
     }
 }
