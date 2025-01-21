@@ -6,11 +6,9 @@
 
 @keyframes appear {
     from {
-        opacity: 0.5;
-        transform: scale(0.8);
+        transform: scale(0.6);
     }
     to {
-        opacity: 1;
         transform: scale(1);
     }
 }
