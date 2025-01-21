@@ -63,7 +63,7 @@ hr{
     display: flex;
     padding: 10px;
     gap: 35px;
-    justify-content: left;
+    justify-content: center;
 }
 
 .cards img{
@@ -88,9 +88,10 @@ hr{
     display: flex;
     align-items: center;
     padding-top: 15px;
-    gap: 30px;
+    gap: 45px;
     padding-bottom: 20px;
     overflow-x: auto;
+    justify-content: space-evenly;
 }
 
 .images img{
@@ -138,11 +139,11 @@ hr{
     width: 100%;
 }
 
-.header-title{
+.header-title h2{
     text-align: center;
     padding-top: 45px;
     padding-bottom: 10px;
     font-size: 27px;
     letter-spacing: 1.5px;
-    font-weight: 350;
+    font-weight: 400;
 }

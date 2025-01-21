@@ -184,6 +184,7 @@ hr{
 
 .vision-box p{
     letter-spacing: 0;
+    font-style: italic;
 }
 
 .grid-container{
@@ -295,10 +296,10 @@ hr{
     gap: 35px;/* Spacing between grid items */
     overflow-x: auto; /* Enable horizontal scrolling */
     padding: 20px;
+    justify-content: space-evenly;
     padding-top: 25px;
-    justify-content: center;
-    scroll-behavior: smooth; /* Hide scrollbar for Firefox */
     align-items: center;
+    scroll-behavior: smooth; /* Hide scrollbar for Firefox */
     animation: appear 3s ease-in-out;
     animation-timeline: view();
     animation-range: entry 0% cover 35%;
@@ -315,13 +316,9 @@ hr{
     scale: 1.05;
 }
 
-.box:hover img{
-    box-shadow: 0px 0px 12px 5px rgba(255, 217, 0, 0.841);
-}
-
 #team-box img{
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
     object-fit: cover;
 }
 
@@ -450,6 +447,7 @@ hr{
     text-align: center;
     font-weight: 400;
     padding:20px;
+    
     animation: appear 3s ease-in-out;
     animation-timeline: view();
     animation-range: entry 0% cover 35%;
@@ -457,13 +455,13 @@ hr{
  
 .project-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 10px;
     padding-left: 15px;
     padding-right: 15px;
     align-items: center;
     overflow-x: auto;
-    gap: 30px;
+    gap: 45px;
     scroll-behavior: smooth;
     -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
     scrollbar-width: none;
@@ -473,7 +471,6 @@ hr{
 }
 
 .project{
-    scale: 1;
     transition: 0.3s;
 }
 
@@ -601,7 +598,7 @@ hr{
 }
 
 .tab:hover button{
-    display: inline;
+    opacity: 1;
 }
 
 .tab-title h3{
@@ -634,8 +631,8 @@ hr{
     padding-right: 7px;
     transition: 0.3s;
     font-size: 15px;
-    display: none;
-    background-color: rgba(255, 255, 255, 0.838);
+    opacity: 0;
+    background-color: rgb(255, 255, 255);
 }
 
 .tab-title button:hover{
