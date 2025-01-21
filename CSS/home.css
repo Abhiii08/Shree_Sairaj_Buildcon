@@ -400,6 +400,12 @@ hr{
     position: relative;
     cursor: pointer;
     padding-top: 45px;
+    scale: 1;
+    transition: 0.3s;
+}
+
+.col:hover{
+    scale: 1.05
 }
 
 .col::after{
