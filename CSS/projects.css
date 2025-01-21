@@ -93,5 +93,8 @@
 /* Solitare */ 
 .solitare{
     width: 100%;
-    min-height: 100vh;
+}
+/* Bella */
+.bella{
+    width: 100%;
 }
