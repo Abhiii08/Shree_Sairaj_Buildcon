@@ -16,20 +16,21 @@
 }
 
 .footer-card{
+    display: flex;
+    gap: 5px;
     color: white;
     text-align: left;
     text-shadow: 1px 1px 2px black;
 }
 
-.footer-card h5{
-    position: relative;
+.footer-inside{
+    padding-top: 4px;
 }
 
 .footer-card img{   
     width: 20px;
     height: 20px;
     margin:5px;
-    display:none;
 }
 
 .footer hr{

@@ -86,7 +86,6 @@ hr{
 
 .images{
     display: flex;
-    align-items: center;
     padding-top: 15px;
     gap: 45px;
     padding-bottom: 20px;
