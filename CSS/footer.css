@@ -8,10 +8,10 @@
 
 .footer-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    padding: 30px;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    padding: 20px;
     gap:40px;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding-top: 60px;
 }
 
