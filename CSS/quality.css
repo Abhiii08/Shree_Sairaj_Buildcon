@@ -87,3 +87,21 @@
         height: 300px;
     }
 }
+
+@media(max-width:820px){
+    .heading-h2::after{
+        width: 40%;
+        left: 30%;
+    }
+    .container{
+        gap: 20px;
+    }
+    .slides{
+        min-width: 375px;
+        min-height: 300px;
+    }
+    .slides img{
+        width: 375px;
+        height: 300px;
+    }
+}
