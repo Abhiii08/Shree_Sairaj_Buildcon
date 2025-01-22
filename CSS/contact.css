@@ -47,6 +47,9 @@
     .header-box h1{
         font-size: 30px;
     }
+    .location{
+        width: 75%;
+    }
 }
 
 /* Location */
