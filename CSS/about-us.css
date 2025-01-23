@@ -162,6 +162,7 @@ hr{
 
 .container{
     padding: 10px;
+
 }
 
 .cards h2{
@@ -176,6 +177,7 @@ hr{
     animation: appear 2.5s ease-in-out;
     animation-timeline: view();
     animation-range: entry 0% cover 45%;
+    gap: 35px
 }
 
 .cards img{
@@ -191,8 +193,11 @@ hr{
     font-size: 19px;
 }
 
+.info p{
+    color: rgb(64, 64, 64);
+}
+
 .cards .info{
-    padding: 30px;
     padding-top: 5px;
 }
 
@@ -212,6 +217,10 @@ hr{
 @media(max-width:700px){
     .cards{
         flex-direction: column;
+        gap: 20px;
+    }
+    .header{
+        height: 250px;
     }
 }
 

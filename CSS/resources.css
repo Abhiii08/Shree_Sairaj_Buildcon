@@ -53,6 +53,9 @@ hr{
     .header-box h1{
         font-size: 27px;
     }
+    .header{
+        height: 250px;
+    }
 }
 
 /* Plants and Machinery */
