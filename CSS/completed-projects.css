@@ -14,6 +14,17 @@
     z-index: -1;
 }
 
+@keyframes fade-up {
+    0%{
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
 /* Heading */
 .header{
     width: 100%;
@@ -52,6 +63,7 @@
 .fifteen-current{
     width: 100%;
     position: relative;
+    animation: fade-up 0.5s
 }
 
 .heading-h2{
