@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito Sans", serif;
+    box-sizing: border-box;
+}
+
+.clients{
+    margin-top: 7%;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.heading h2{
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 27px;
+    position: relative;
+}
+
+.heading h2::after{
+    content: '';
+    height: 2.5px;
+    background-color: red;
+    width: 30%;
+    position: absolute;
+    left: 35%;
+    bottom: -10px;
+}
