@@ -135,6 +135,9 @@ hr{
 }
 
 @media(max-width:700px){
+    .header{
+        margin-bottom: 12%;
+    }
     .header-box::after{
         width: 70%;
         left: 15%;
@@ -157,9 +160,6 @@ hr{
 }
 
 @media(max-width:820px){
-    .header{
-        height: 250px;
-    }
     .container{
         flex-direction: column;
         gap: 25px;
