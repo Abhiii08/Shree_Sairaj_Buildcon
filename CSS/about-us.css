@@ -6,10 +6,23 @@
 
 @keyframes appear {
     from {
+        opacity: 0.3;
         transform: scale(0.6);
     }
     to {
+        opacity: 1;
         transform: scale(1);
+    }
+}
+
+@keyframes fade-up {
+    0%{
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
     }
 }
 
@@ -62,7 +75,8 @@ hr{
     background: rgb(255, 255, 255);
     margin: auto;
     text-align: center;
-    margin-top: 1%
+    margin-top: 1%;
+    animation: fade-up 0.5s
 }
 
 .vision h3{
