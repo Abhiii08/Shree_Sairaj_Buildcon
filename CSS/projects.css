@@ -103,7 +103,8 @@ hr{
     animation-timeline: view();
     animation-range: entry 0% cover 35%;
     background-color: #30363a;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.289);
 }
 
 .cover img{
