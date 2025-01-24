@@ -19,7 +19,7 @@
 @keyframes appear {
     from{
         opacity: 0.3;
-        transform: translateX(30px)
+        transform: translateX(50px)
     }
     to{
         opacity: 1;
@@ -56,24 +56,34 @@ hr{
     left: 40%;
 }
 
-.header-box#second::after{
-    content: '';
-    height: 2.5px;
-    background-color: red;
-    position: absolute;
-    width: 35%;
-    left: 32.5%;
-}
-
-.header button:hover{
-    background: linear-gradient(rgba(255, 0, 0, 0.836),rgba(0, 0, 0, 0.836));
-}
-
 .header-box h2{
     font-size: 27px;
     letter-spacing: 1.5px;
     font-weight: 400;
     position: relative;
+}
+
+.header-box-2{
+    text-align: center;
+    padding-top: 25px;
+    animation: fade-up 0.5s;
+    position: relative;
+}
+
+.header-box-2 h2{
+    font-size: 27px;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    position: relative;
+}
+
+.header-box-2::after{
+    content: '';
+    height: 2.5px;
+    background-color: red;
+    position: absolute;
+    width: 30%;
+    left: 35%;
 }
 
 .ongoing-projects{
@@ -93,8 +103,8 @@ hr{
 }
 
 .cover img{
-    width: 350px;
-    height: 250px;
+    width: 325px;
+    height: 225px;
     object-fit: cover;
     box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.289);
 }
@@ -142,21 +152,25 @@ hr{
         width: 70%;
         left: 15%;
     }
-    .header-box#second::after{
-        width: 75%;
-        left: 12.5%;
+    .header-box-2::after{
+        width: 90%;
+        left: 5%;
     }
     .container{
         flex-direction: column;
         gap: 25px
     }
     .cover img{
-        width: 300px;
+        width: 250px;
         height: 200px;
     }
     .images{
-        padding-bottom: 15px;
-        animation: none;
+        padding:0px;
+    }
+    .images img{
+        box-shadow: none;
+        width: 275px;
+        height: 200px;
     }
 }
 
