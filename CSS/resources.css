@@ -80,6 +80,7 @@ hr{
     letter-spacing: 1px;
     text-align: center;
     padding-top: 20px;
+    font-weight: 400;
 }
 
 .container{
@@ -143,6 +144,12 @@ hr{
     }
     .cards{
         padding: 15px;
+    }
+    .info h3::after{
+        left:30%
+    }
+    .cards:hover .info h3::after{
+        width: 40%;
     }
 }
 
