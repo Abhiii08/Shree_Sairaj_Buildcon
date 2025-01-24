@@ -110,6 +110,21 @@ hr{
     box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.289);
 }
 
+.info{
+    position: relative;
+}
+
+.info::before{
+    content: '';
+    height: 1px;
+    background-color: rgb(40, 40, 40);
+    position: absolute;
+    width: 50%;
+    rotate: 90deg;
+    top: 50%;
+    left: -28%;
+}
+
 .images{
     padding-top: 15px;
     display: flex;
@@ -170,11 +185,18 @@ hr{
         width: 275px;
         height: 200px;
     }
+    .info::before{
+        width: 0;
+    }
 }
 
 @media(max-width:820px){
     .container{
         flex-direction: column;
         gap: 25px;
+        padding-left: 15px;
+    }
+    .info::before{
+        width: 0;
     }
 }
