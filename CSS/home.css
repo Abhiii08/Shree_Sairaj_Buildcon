@@ -14,11 +14,11 @@
 @keyframes appear {
     from{
         opacity: 0.3;
-        transform: translateX(50px)
+        scale: 0.8    
     }
     to{
         opacity: 1;
-        transform: translateX(0px)
+        scale: 1
     }
 }
 
@@ -182,6 +182,12 @@ hr{
     color: white;  
 }
 
+.team-container{
+    animation: appear 3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+}
+
 .team-heading{
     color: black;
     text-align: center;
@@ -212,23 +218,19 @@ hr{
 
 .team-area{
     display: flex; /* Keep the grid layout */
-    gap: 35px;/* Spacing between grid items */
+    gap: 25px;/* Spacing between grid items */
     overflow-x: auto; /* Enable horizontal scrolling */
-    padding: 20px;
+    padding: 15px;
     justify-content: space-evenly;
     padding-top: 25px;
-    align-items: center;
     scroll-behavior: smooth; /* Hide scrollbar for Firefox */
-    animation: appear 3s ease-in-out;
-    animation-timeline: view();
-    animation-range: entry 0% cover 35%;
 }
 
 .box{
     position: relative;
     align-items: center;
     transition: 0.3s;
-    scale: 1
+    scale: 1;
 }
 
 .box:hover{
@@ -236,8 +238,8 @@ hr{
 }
 
 #team-box img{
-    width: 175px;
-    height: 175px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
 }
 
