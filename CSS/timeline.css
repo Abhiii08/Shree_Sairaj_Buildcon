@@ -18,7 +18,7 @@
 
 @keyframes appear {
     from{
-        opacity: 0.3;
+        opacity: 0;
         transform: translateX(50px)
     }
     to{
@@ -29,7 +29,7 @@
 
 @keyframes appear-thin {
     from{
-        opacity: 0.3;
+        opacity: 0;
     }
     to{
         opacity: 1;

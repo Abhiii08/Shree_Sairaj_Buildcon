@@ -5,10 +5,9 @@
     box-sizing: border-box;
 }
 
-.clients{
+.top{
     margin-top: 5%;
     width: 100%;
-    min-height: 100vh;
 }
 
 .heading h2{
@@ -31,8 +30,8 @@
 
 
 @media(max-width:700px){
-    .clients{
-        margin-top: 16%;
+    .top{
+        padding-top: 30px;
     }
     .heading h2::after{
         width: 90%;
@@ -41,7 +40,7 @@
 }
 
 @media(max-width:820px){
-    .clients{
+    .top{
         margin-top: 10%;
     }
     .heading h2::after{
@@ -49,3 +48,64 @@
         left: 20%;
     }
 }
+
+.clients{
+    width: 100%;
+    position: relative;
+    animation: fade-up 0.5s;
+    padding-bottom: 25px;
+}
+
+.client-table{
+    border-collapse: collapse;
+    font-size: 1em;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.container{
+    max-width: 95%;
+    padding-top: 30px;
+    overflow: hidden;
+}
+
+.client-table thead tr{
+    background-color: rgba(255, 0, 0, 0.71);
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-weight: bold;
+}
+
+th, td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 15px;
+}
+
+tbody tr{
+    border-bottom: 1px solid rgb(166, 166, 166);
+}
+
+tbody tr:nth-of-type(even){
+    background-color: rgb(226, 226, 226);
+}
+
+.client-table tbody tr:last-of-type{
+    border-bottom: 1.5px solid rgba(255, 0, 0, 0.71); 
+}
+
+@media(max-width:700px){
+    .wrapper{
+        overflow-x: auto;
+        padding: 0;
+    }
+    .container{
+        max-width: 100%;
+    }
+}
+
+.wrapper::-webkit-scrollbar{
+    display: none;
+} 
