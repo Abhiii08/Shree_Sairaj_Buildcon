@@ -188,7 +188,7 @@ hr{
     padding-top: 20px;
     font-size: 27px;
     letter-spacing: 1px;
-    animation: appear-left 3s ease-in-out;
+    animation: appear 3s ease-in-out;
     animation-timeline: view();
     animation-range: entry 0% cover 35%;
     font-weight: 400;
@@ -198,7 +198,7 @@ hr{
     padding-top: 25px;
     display: flex;
     gap: 100px;
-    animation: appear-left 3s ease-in-out;
+    animation: appear 3s ease-in-out;
     animation-timeline: view();
     animation-range: entry 0% cover 35%;
     padding-bottom: 25px;
@@ -219,7 +219,7 @@ hr{
     padding-top: 25px;
     align-items: center;
     scroll-behavior: smooth; /* Hide scrollbar for Firefox */
-    animation: appear-left 3s ease-in-out;
+    animation: appear 3s ease-in-out;
     animation-timeline: view();
     animation-range: entry 0% cover 35%;
 }
@@ -387,7 +387,7 @@ hr{
     padding-left: 15px;
     padding-right: 15px;
     overflow-x: auto;
-    gap: 45px;
+    gap: 25px;
     scroll-behavior: smooth;
     -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
     scrollbar-width: none;
@@ -413,8 +413,8 @@ hr{
 }
 
 .project img{
-    width: 225px;
-    height: 175px;
+    width: 250px;
+    height: 200px;
     object-fit: cover;
     transition: 0.3s;
     cursor: pointer;
@@ -460,6 +460,9 @@ hr{
     background: rgb(235, 235, 235);
     color: rgb(0, 0, 0);
     transition: 0.3s;
+    animation: appear 3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
 }
 
 .project-button:hover{
