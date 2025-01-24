@@ -12,7 +12,7 @@ hr{
 
 @keyframes appear {
     from{
-        opacity: 0.3;
+        opacity: 0;
         transform: scale(0.7)
     }
     to{
