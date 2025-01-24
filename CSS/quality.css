@@ -29,3 +29,42 @@
     width: 20%;
     left: 40%;
 }
+
+.container{
+    padding: 25px;
+    background-color: #30363a;
+    padding-bottom: 40px;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.289);
+}
+
+.container .title h4{
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    font-weight: 400;
+    color: white
+}
+
+.images{
+    display: flex;
+    gap: 25px;
+    justify-content: space-evenly;
+}
+
+.images img{
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.289);
+}
+
+@media(max-width:700px){
+    .images{
+        flex-direction: column;
+    }
+    .heading-h2::after{
+        width: 50%;
+        left: 25%
+    }
+}
