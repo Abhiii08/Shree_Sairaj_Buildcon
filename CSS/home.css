@@ -326,7 +326,7 @@ hr{
 .col::after{
     content: '';
     position: absolute;
-    height: 2.5px;
+    height: 1.5px;
     width: 0%;
     left: 20%;
     bottom: -5px;
@@ -433,7 +433,7 @@ hr{
 
 .project-title h5::after{
     content: '';
-    height: 2px;
+    height: 1.5px;
     background-color: red;
     width: 0%;
     position: absolute;
@@ -536,7 +536,7 @@ hr{
 .tab::after{
     content: '';
     position: absolute;
-    height: 2px;
+    height: 1.5px;
     width: 0%;
     left: 20%;
     bottom: 10px;
