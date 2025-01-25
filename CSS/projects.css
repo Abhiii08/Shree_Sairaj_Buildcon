@@ -83,6 +83,7 @@ hr{
     margin-top: 6.5vh;
     padding-top: 25px;
     display: flex;
+    flex-wrap: wrap;
     gap: 25px;
     padding-bottom: 25px;
     justify-content: space-evenly;
@@ -119,7 +120,7 @@ hr{
 .images{
     padding-top: 15px;
     display: flex;
-    overflow-x: auto;
+    flex-wrap: wrap;
     gap: 20px;
     animation: appear 3s ease-in-out;
     animation-timeline: view();
@@ -182,8 +183,8 @@ hr{
         left: 5%;
     }
     .container{
-        flex-direction: column;
         gap: 25px;
+        flex-wrap: unset;
     }
     .cover img{
         width: 250px;
@@ -191,6 +192,8 @@ hr{
     }
     .images{
         padding:0px;
+        flex-wrap: unset;
+        overflow-x: auto;
     }
     .images img{
         box-shadow: none;

@@ -6,13 +6,6 @@
 }
 
 /* Video */
-.bg-video{
-    position: absolute;
-    object-fit: cover;
-    top: 0;
-    right: 0;
-    z-index: -1;
-}
 
 @keyframes fade-up {
     0%{
@@ -31,7 +24,7 @@
     position: relative;
     height: 350px;
     overflow: hidden;
-    background: linear-gradient(rgba(0, 0, 0, 0.159),transparent);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.386),transparent), url(/Images/Header.jpg);
     background-size: cover;
 }
 
