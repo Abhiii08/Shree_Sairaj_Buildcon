@@ -43,7 +43,6 @@ hr{
     object-fit: cover;
     top: 0;
     right: 0;
-    z-index: -1
 }
 
 @media(min-aspect-ratio:9/16){
@@ -90,6 +89,16 @@ hr{
     }
     .text-box h5{
         font-size: 15px;
+    }
+    .header{
+        min-height: 30vh;
+        overflow: hidden;
+    }
+    .bg-video{
+        margin-top: 12%;
+        object-fit: contain;
+        width: 100%;
+        height: auto;
     }
 }
 
