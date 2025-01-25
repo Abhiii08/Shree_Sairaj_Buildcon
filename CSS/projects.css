@@ -4,18 +4,6 @@
     font-family: "Nunito Sans", serif;
 }
 
-@keyframes fade-up {
-    0%{
-        opacity: 0;
-        transform: translateY(30px) scale(0.9);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px) scale(1);
-    }
-}
-
-
 @keyframes appear {
     from{
         opacity: 0;
@@ -27,12 +15,14 @@
     }
 }
 
-
 .header{
     width: 100%;
-    position: relative;
-    padding-bottom: 25px;
+    height: 350px;
+    background-image: linear-gradient(transparent,rgba(0, 0, 0, 0.388)), url(/Images/Header.jpg);
+    background-size: cover;
+    overflow: hidden;
 }
+
 
 hr{
     animation: appear 3s ease-in-out;
@@ -42,10 +32,8 @@ hr{
 
 .header-box{
     text-align: center;
-    padding-top: 25px;
-    animation: fade-up 0.5s;
+    padding-top: 30px;
     position: relative;
-    padding-bottom: 25px;
 }
 
 .header-box::after{
@@ -67,7 +55,6 @@ hr{
 .header-box-2{
     text-align: center;
     padding-top: 25px;
-    animation: fade-up 0.5s;
     position: relative;
 }
 
@@ -89,11 +76,11 @@ hr{
 
 .ongoing-projects{
     width: 100%;
-    padding: 15px;
-    animation: fade-up 0.5s;
+    padding: 10px;
 }
 
 .container{
+    margin-top: 5vh;
     padding-top: 25px;
     display: flex;
     gap: 25px;
@@ -103,7 +90,7 @@ hr{
     animation-timeline: view();
     animation-range: entry 0% cover 35%;
     background-color: #30363a;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.289);
 }
 
@@ -159,7 +146,7 @@ hr{
 
 .completed-projects{
     width: 100%;
-    padding: 15px;
+    padding: 10px;
 }
 
 .completed-projects button{
@@ -196,7 +183,7 @@ hr{
     }
     .container{
         flex-direction: column;
-        gap: 25px
+        gap: 25px;
     }
     .cover img{
         width: 250px;

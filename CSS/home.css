@@ -218,7 +218,7 @@ hr{
 
 .team-area{
     display: flex; /* Keep the grid layout */
-    gap: 25px;/* Spacing between grid items */
+    gap: 5px;/* Spacing between grid items */
     overflow-x: auto; /* Enable horizontal scrolling */
     padding: 15px;
     justify-content: space-evenly;
@@ -279,6 +279,7 @@ hr{
     }
     .team-area{
         justify-content: flex-start;
+        gap: 25px;
     }
     #team-box h3{
         font-size: 18px;
@@ -311,6 +312,7 @@ hr{
 
 .col p{
     color: red;
+    font-size: 25px;
 }
 
 .col{
@@ -343,6 +345,11 @@ hr{
 
 .col span{
     font-weight: bold;
+    font-size: 22px;
+}
+
+.col h6{
+    font-size: 16px
 }
 
 .value-grid{
@@ -357,8 +364,8 @@ hr{
 }
 
 .value img{
-    width: 37.5px;
-    height: 37.5px;
+    width: 55px;
+    height: 55px;
 }
 
 /* Ongoing Projects and Recently completed projects*/
@@ -483,29 +490,27 @@ hr{
     }
 }
 
-
 /* Tabs */
 .tabs{
     width: 100%;
-    position: relative;
-    padding: 10px;
     padding-top: 30px;
 }
 
 .container{
     display: flex;
     padding: 10px;
-    gap: 25px;
-    align-items: center;
+    gap: 40px;
+    justify-content: space-evenly;
     padding-top: 25px;
     overflow-x: auto;
     animation: appear 3s ease-in-out;
     animation-timeline: view();
     animation-range: entry 0% cover 35%;
+    align-items: center;
 }
 
 .tab img{
-    width: 300px;
+    width: 275px;
     height: 230px;
     object-fit: cover; 
     align-items: center;
@@ -576,6 +581,7 @@ hr{
     .container{
         flex-direction: column;
         justify-content: flex-start;
+        gap: 25px
     }
     .tab-title button{
         display: block;

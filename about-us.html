@@ -24,10 +24,27 @@
     <!--Script link-->
     <script src="/JS/home.js"></script>
     <script src="/JS/rd-mr.js"></script>
-    <script src="/JS/slider.js"></script>
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('.fixed-top');
+
+        window.addEventListener('scroll', () => {
+            const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (currentScrollTop > lastScrollTop) {
+                // Scrolling down
+                navbar.style.top = '-80px'; // Adjust this value if your navbar height is different
+            } else {
+                // Scrolling up
+                navbar.style.top = '0';
+            }
+
+            lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For Mobile or negative scrolling
+        });
+    </script>
 
     <section class="header">
-        <nav class="fixed-top">
+        <nav>
             <a href="index.html"><img src="/Images/ssb logo.png" alt=""></a>
             <div class="nav-links" id="navlinks">
                 <i class="fa fa-times" onclick="hidemenu()"></i>
@@ -79,11 +96,13 @@
                     <img src="/Images/People/santosh tote.jpg" alt="">
                 </div>
                 <div class="info">
-                    <h2>Santosh Tote</h2>
+                    <h2>Santosh Gangadhar Tote</h2>
                     <h5>Managing Partner</h5>
+                    <h6>B.E Civil | DCE</h6>
+                    <h6>Experience: 25+ years</h6>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae amet deserunt mollitia magni, laborum similique nam inventore tenetur numquam sint sequi voluptatibus voluptates repellendus adipisci praesentium! Voluptate voluptates exercitationem eum. <span class="more-info">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium magni unde nemo natus enim alias dicta laboriosam dolorem id. Ducimus voluptate molestias laborum cum fugit architecto minus sit debitis maiores.
+                        Santosh sir is the driving force behind Shree Sairaj Buildcon, a visionary leader who dreams big and inspires everyone to dream with him. His philosophy centers on inclusive growth—ensuring that every individual in the organization grows alongside the company. He strongly believes in teamwork and creating a system-driven company where relationships, mutual respect, and blessings earned through dedication fuel success.  
+                        With his forward-thinking mindset, Santosh Sir envisions expanding beyond construction into larger business ventures, while continuing to contribute to society. He is deeply committed to development, striving to make a meaningful impact on the community, city, and the nation. His ultimate aspiration is to make our country <span class="more-info">a global model for progress and excellence. Santosh Sir’s leadership is a blend of strategic vision, compassion, and determination, setting a benchmark not just for the construction industry but for all those who work alongside him. He leads with a focus on growth, innovation, and societal betterment, ensuring that his values resonate across every project and initiative he undertakes.
                         </span>
                     </p>
                     <span class="toggle-btn">Read More...</span>
@@ -94,11 +113,15 @@
                     <img src="/Images/People/ganesh pohane.jpg" alt="">
                 </div>
                 <div class="info">
-                    <h2>Ganesh Pohane</h2>
+                    <h2>Ganesh Madhukar Pohane</h2>
                     <h5>Managing Partner</h5>
+                    <h6>B.E Civil | DCE</h6>
+                    <h6>Experience: 25+ years</h6>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae amet deserunt mollitia magni, laborum similique nam inventore tenetur numquam sint sequi<span class="more-info"> voluptatibus voluptates repellendus adipisci praesentium! Voluptate voluptates exercitationem eum. 
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium magni unde nemo natus enim alias dicta laboriosam dolorem id. Ducimus voluptate molestias laborum cum fugit architecto minus sit debitis maiores.
+                        Ganesh sir, a visionary director of Shree Sairaj Buildcon (SSB), is celebrated for his sincerity, sharp attention to detail, and unwavering commitment to completing projects on or even before deadlines. Over his 25+ years in the construction industry, he has developed exceptional communication skills, enabling him to foster strong relationships and make prompt, confident decisions that have propelled the company to new heights of excellence.  
+                        A compassionate leader, Ganesh sir actively supports various social causes, reflecting his deep sense of responsibility toward the community. His determination and meticulous nature continue to set benchmarks in the construction industry, inspiring everyone around him to aim higher and deliver their best. <br> <span class="more-info">
+                        "My dream is that along with personal growth, everyone around us should also grow, and together, hand in hand, we should make the company great. I envision building a team-oriented, system-driven company that thrives on relationships and blessings earned through hard work.  
+                        My thoughts are to not only excel in construction but also venture into bigger businesses while contributing to social work for the development of our city and other regions. Ultimately, I aspire for the country's growth and to make our nation a model for the world to follow."
                         </span>
                     </p>
                     <span class="toggle-btn">Read More...</span>
@@ -234,9 +257,10 @@
                     <h5>Purchase Manager</h5>
                     <h6>Experience with SSB: 4 years</h6>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae amet deserunt mollitia magni, laborum similique nam inventore tenetur numquam sint sequi<span class="more-info"> voluptatibus voluptates repellendus adipisci praesentium! Voluptate voluptates exercitationem eum. 
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium magni unde nemo natus enim alias dicta laboriosam dolorem id. Ducimus voluptate molestias laborum cum fugit architecto minus sit debitis maiores.
-                        </span>
+                        Bharat Vasant Karangale began his career in 2004 with Pride Purple Group's Project Panchavati as a Store Keeper. In 2008, he joined Pristine Properties for their Project Pristine Grandeur as a Store Incharge, managing all site material purchases. By 2010, he progressed to the role of Purchase Manager for Project Pristine Pacific in Ambegaon, where he handled site material procurement, billing, and payments.
+                        In 2021, Bharat took a pivotal step in his career by joining Shree Sairaj Buildcon as a Purchase Manager <span class="more-info">
+                        at their head office. In this role, he has demonstrated exceptional expertise in managing material procurement for all sites, overseeing billing and payments, and efficiently handling store material operations. His leadership and strategic approach have significantly contributed to the streamlined operations and success of the organization.
+                        </span> 
                     </p>
                     <span class="toggle-btn">Read More...</span>
                 </div>  
