@@ -76,6 +76,7 @@
     justify-content: space-evenly;
     align-items: center;
     overflow-x: auto;
+    scrollbar-width: none;
 }
 
 .images img{
@@ -92,5 +93,11 @@
     .heading-h2::after{
         width: 50%;
         left: 25%
+    }
+}
+
+@media(max-width:700px){
+    .images{
+        scrollbar-width:auto;
     }
 }
