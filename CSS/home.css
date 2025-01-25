@@ -497,14 +497,14 @@ hr{
 .container{
     display: flex;
     padding: 10px;
-    gap: 40px;
+    gap: 25px;
     justify-content: space-evenly;
     padding-top: 25px;
-    overflow-x: auto;
     animation: appear 3s ease-in-out;
     animation-timeline: view();
     animation-range: entry 0% cover 35%;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .tab img{
