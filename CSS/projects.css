@@ -80,7 +80,7 @@ hr{
 }
 
 .container{
-    margin-top: 5vh;
+    margin-top: 6.5vh;
     padding-top: 25px;
     display: flex;
     gap: 25px;
@@ -90,7 +90,7 @@ hr{
     animation-timeline: view();
     animation-range: entry 0% cover 35%;
     background-color: #30363a;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.289);
 }
 
